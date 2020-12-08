@@ -91,7 +91,6 @@
       <DependentUpon>CompuCenterDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="conexion.vb" />
-    <Compile Include="ConexionCrud.vb" />
     <Compile Include="EXAMEN\conexionExamen.vb" />
     <Compile Include="EXAMEN\CRUDexamen.vb" />
     <Compile Include="EXAMEN\Examen-II-Parcial.Designer.vb">
