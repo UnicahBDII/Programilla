@@ -3,13 +3,13 @@ Imports System.Data.SqlClient
 
 Public Class conexion
 
-    'Chamu Aqui esta 
     Public conexion As SqlConnection = New SqlConnection("Data Source=DESKTOP-IFG9AL0\SQLEXPRESS;Initial Catalog=CompuCenter;Integrated Security=True")
     Public ds As DataSet = New DataSet()
     Public da As SqlDataAdapter
     Public lectura As SqlDataReader
     Public comando As SqlCommand
     Public cmd As New SqlCommand
+    'poneme algo
 
     Public Sub conectar()
         Try
