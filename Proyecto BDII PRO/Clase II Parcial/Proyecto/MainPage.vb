@@ -84,10 +84,6 @@ Public Class MainPage
 
     End Sub
 
-    Private Sub MainPage_Load(sender As Object, e As EventArgs)
-        MessageBox.Show("CONECTADO")
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
     End Sub
@@ -105,7 +101,7 @@ Public Class MainPage
     End Sub
 
     Private Sub MainPage_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-        conexion.conectar()
+        'conexion.conectar()
     End Sub
 End Class
 
