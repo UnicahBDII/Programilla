@@ -11,6 +11,7 @@ Public Class conexion
     Public cmd As New SqlCommand
     'poneme algo
     'que te pingak
+    'Alooooo
     Public Sub conectar()
         Try
             conexion.Open()
