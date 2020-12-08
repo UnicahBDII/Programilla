@@ -10,7 +10,7 @@ Public Class conexion
     Public comando As SqlCommand
     Public cmd As New SqlCommand
     'poneme algo
-
+    'que te pingak
     Public Sub conectar()
         Try
             conexion.Open()
