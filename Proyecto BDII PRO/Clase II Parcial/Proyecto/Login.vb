@@ -15,11 +15,8 @@ Public Class Login
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Dim Usuario As String
-    Dim contra As String
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Usuario = "ADMIN"
-        contra = "12345"
+
     End Sub
 
     Private Sub btnRegistrarse_Click(sender As Object, e As EventArgs)
@@ -29,7 +26,7 @@ Public Class Login
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
 
-        If txtContraseña.Text = contra And txtUsuario.Text = Usuario Then
+        If 'txtContraseña.Text = contra And txtUsuario.Text = Usuario Then
             MsgBox("Ingreso al sistema Exitosamente!", vbInformation + vbOK, "Informacion")
             Me.Hide()
             PantallaDeCarga.Show()
