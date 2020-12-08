@@ -1,0 +1,23 @@
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.vbprojAssemblyReference.cache
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Arreglos.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.LibretaDeAhorro.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Examen_II_Parcial.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Compras.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.EMPLEADOS.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Informacion.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Login.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.MainPageUsuario.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Productos.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Registro.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Stock.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Telefono.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.MainPage.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.PantallaDeCarga.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.UsuarioAdministracion.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Usuario.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Ventas.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.EntregaBolsaSolidaria.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.MenuPersonalizado.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Resources.resources
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.vbproj.GenerateResource.cache
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.vbproj.CoreCompileInputs.cache
