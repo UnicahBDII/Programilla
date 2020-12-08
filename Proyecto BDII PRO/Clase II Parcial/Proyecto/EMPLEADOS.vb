@@ -10,7 +10,7 @@ Public Class EMPLEADOS
 
 
     Private Sub limpiar()
-        prueba2.Clear()
+        txtCodigo.Clear()
         txtIdentidad.Clear()
         cmbDepto.SelectedIndex = -1
         cmbmunicipio.SelectedIndex = -1
@@ -439,7 +439,7 @@ Public Class EMPLEADOS
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         limpiar()
-        prueba2.Enabled = True
+        txtCodigo.Enabled = True
     End Sub
 
 
@@ -448,49 +448,6 @@ Public Class EMPLEADOS
 
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
-        Try
-            direccion = cmbDepto.Text & ", " & cmbmunicipio.Text & ", " & txtBarrio.Text
-            If txtIdentidad.Text.Length <> 15 Then
-                MessageBox.Show("La identidad esta incompleta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-            End If
-
-            If cmbmunicipio.SelectedIndex = -1 Or cmbDepto.SelectedIndex = -1 Or cmbPuesto.SelectedIndex = -1 Or cmbSexo.SelectedIndex = -1 Then
-                MessageBox.Show("Debe llenar todos los campos requeridos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-            End If
-
-            If prueba2.Text = "" Or txtNombre.Text = "" Or txtPrueba.Text = "" Or txtBarrio.Text = "" Or txtEdad.Text = "" Then
-                MessageBox.Show("Debe llenar todos los campos requeridos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-            End If
-
-            index = Val(cmbPuesto.SelectedIndex)
-            Identidad = txtIdentidad.Text
-
-
-            If (conexion.validarEmpleados(prueba2.Text) = False) Then
-                    Dim agregar As String = "insert into Center.empleados values(" + prueba2.Text + ",'" + Identidad + "','" + txtNombre.Text + "','" + direccion + "','" + txtEdad.Text + "','" + cmbSexo.Text + "','" + cmbPuesto.Text + "', '" + txtPrueba.Text + "')"
-                    If (conexion.Insertar(agregar)) Then
-                        MessageBox.Show("Empleado agregado correctamente!!!", "Ingreso de Empleado", MessageBoxButtons.OK, MessageBoxIcon.Information)
-
-                    limpiar()
-
-                Else
-                        MessageBox.Show("Error al agregar el Empleado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                    End If
-                Else
-                    MsgBox("Este empleado ya existe", vbObjectError)
-                    conexion.conexion.Close()
-
-                End If
-
-
-
-        Catch ex As Exception
-            MessageBox.Show("no se lleno por: " + ex.ToString)
-        End Try
-        conexion.conexion.Close()
 
     End Sub
 
@@ -509,33 +466,19 @@ Public Class EMPLEADOS
     Private Sub Button2_Click_1(sender As Object, e As EventArgs)
         Dim id As String
         id = txtIdentidad.Text
-        prueba2.Text = id
+        txtCodigo.Text = id
 
     End Sub
 
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
-        direccion = cmbDepto.Text & ", " & cmbmunicipio.Text & ", " & txtBarrio.Text
-        Try
-            Dim modificar As String =
-           "identidad='" + txtIdentidad.Text + "', nombre='" + txtNombre.Text + "', direccion='" + txtBarrio.Text + "', edad='" + txtEdad.Text + "',sexo='" + cmbSexo.Text + "',puesto='" + cmbPuesto.Text + "',idPuesto='" + txtPrueba.Text + "'"
-            If (conexion.modificar("Center.empleados", modificar, " IdCodigo=" + prueba2.Text)) Then
-                MessageBox.Show("Actualizado")
 
-                conexion.conexion.Close()
-            Else
-                MessageBox.Show("Error al actualizar")
-                conexion.conexion.Close()
-            End If
-        Catch ex As Exception
-            MessageBox.Show("no se lleno por: " + ex.ToString)
-        End Try
     End Sub
 
     Private Sub DGListado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListado.CellContentClick
         Try
 
             Dim dgempleados As DataGridViewRow = DGListado.Rows(e.RowIndex)
-            prueba2.Text = dgempleados.Cells(0).Value.ToString()
+            txtCodigo.Text = dgempleados.Cells(0).Value.ToString()
             txtIdentidad.Text = dgempleados.Cells(1).Value.ToString()
             txtNombre.Text = dgempleados.Cells(2).Value.ToString()
             txtBarrio.Text = dgempleados.Cells(3).Value.ToString()
@@ -549,7 +492,7 @@ Public Class EMPLEADOS
 
             cmbDepto.Enabled = False
             cmbmunicipio.Enabled = False
-            prueba2.Enabled = False
+            txtCodigo.Enabled = False
 
             btnEliminar.Enabled = True
             btnEditar.Enabled = True
@@ -561,35 +504,8 @@ Public Class EMPLEADOS
     End Sub
 
 
-    Private Sub consultarPresidente()
-        Try
-            DataT = conexion.llenarDataGridEmpleado()
-            If DataT.Rows.Count <> 0 Then
-                DGListado.DataSource = DataT
-                DGListado.DataSource = DataT
-            Else
-                DGListado.DataSource = Nothing
-                MessageBox.Show("Error al consultar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-            End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
-    End Sub
-
-
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
-        Try
-            If (conexion.eliminar("Center.empleados", "IdCodigo = " + prueba2.Text)) Then
-                MessageBox.Show("Registro eliminado correctamente")
 
-            Else
-                MessageBox.Show("error al eliminar")
-
-            End If
-        Catch ex As Exception
-            MessageBox.Show("no se lleno por: " + ex.ToString)
-            conexion.conexion.Close()
-        End Try
     End Sub
 
     Private Sub txtIdentidad_MouseHover(sender As Object, e As EventArgs) Handles txtIdentidad.MouseHover
@@ -757,20 +673,9 @@ Public Class EMPLEADOS
         End If
     End Sub
 
-    Private Sub busquedaDeDatos()
-        conexion.Consulta("select * from Center.empleados where IdCodigo = '" + prueba2.Text + "'", "Center.empleados")
-        DGListado.DataSource = conexion.ds.Tables("Center.empleados")
-    End Sub
 
     Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
-        conexion.Consulta("select * from Center.empleados where IdCodigo = '" + prueba2.Text + "'", "Center.empleados")
 
-        If (conexion.validarEmpleados(prueba2.Text) = False) Then
-            MessageBox.Show("Error en la busqueda, el empleado no existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        Else
-            busquedaDeDatos()
-
-        End If
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
@@ -778,6 +683,10 @@ Public Class EMPLEADOS
     End Sub
 
     Private Sub EMPLEADOS_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub cmbPuesto_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbPuesto.SelectedIndexChanged
 
     End Sub
 End Class
