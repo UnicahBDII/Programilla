@@ -26,13 +26,13 @@ Public Class Login
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
 
-        If 'txtContraseña.Text = contra And txtUsuario.Text = Usuario Then
-            MsgBox("Ingreso al sistema Exitosamente!", vbInformation + vbOK, "Informacion")
-            Me.Hide()
-            PantallaDeCarga.Show()
-        Else
-            MsgBox("Ingreso fallido, vuelva a intentarlo...", vbObjectError + vbOK, "Error")
-        End If
+        'If txtContraseña.Text = contra And txtUsuario.Text = Usuario Then
+        '    MsgBox("Ingreso al sistema Exitosamente!", vbInformation + vbOK, "Informacion")
+        '    Me.Hide()
+        '    PantallaDeCarga.Show()
+        'Else
+        '    MsgBox("Ingreso fallido, vuelva a intentarlo...", vbObjectError + vbOK, "Error")
+        'End If
     End Sub
 
     Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click

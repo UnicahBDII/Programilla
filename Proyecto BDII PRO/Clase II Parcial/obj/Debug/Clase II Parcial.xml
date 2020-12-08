@@ -1,0 +1,591 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Clase II Parcial
+</name>
+</assembly>
+<members>
+<member name="T:Clase_II_Parcial.My.Resources.Resources">
+<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.ResourceManager">
+<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Culture">
+<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._21nkbhpXM_L__AC_SY400_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._21nkbhpXM_L1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._519c190ba4e93ebf48ed57a87a6d7a52">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._519c190ba4e93ebf48ed57a87a6d7a521">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._519c190ba4e93ebf48ed57a87a6d7a5211">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._519c190ba4e93ebf48ed57a87a6d7a522">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._55517312_blanco_azul_cielo_gradiente_ilustración_vectorial">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._55517312_blanco_azul_cielo_gradiente_ilustración_vectorial1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._96fa72f23263060b83a37cc084d34d85">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._96fa72f23263060b83a37cc084d34d851">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._9f5b14ba9a90f5e04be14144f383b642">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._9f5b14ba9a90f5e04be14144f383b6421">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._9f5b14ba9a90f5e04be14144f383b64211">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._9f5b14ba9a90f5e04be14144f383b6422">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._9f5b14ba9a90f5e04be14144f383b64221">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._9f5b14ba9a90f5e04be14144f383b6423">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources._exit">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.bolsa_de_la_compra">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.bolsa_de_la_compra1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.buscar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.buscar1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.caja">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.caja1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.carrito_de_compras">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.carrito_de_compras1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.clientes">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.clientes1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.close">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.close1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.compras">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.compras1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.copiar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.copiar1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.depositphotos_198606870_stock_video_multicolored_motion_gradient_background">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.depositphotos_198606870_stock_video_multicolored_motion_gradient_background1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.depositphotos_198606870_stock_video_multicolored_motion_gradient_background11">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.depositphotos_198606870_stock_video_multicolored_motion_gradient_background2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.dfdf">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.dfdf1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.diseno_fondo_turquesa_desenfocada_1107_187">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.diseno_fondo_turquesa_desenfocada_1107_1871">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.editar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.editar1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.editar11">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.editar2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.eliminar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.eliminar1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.empleados">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.empleados1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.empleados11">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.empleados2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.employee__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.employee__1_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.exit1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.fsdfsdf">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.fsdfsdf1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.grupo">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.grupo1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Icono_cerrar_FN">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Icono_cerrar_FN1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Icono_Maximizar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Icono_Maximizar1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Icono_Minimizar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Icono_Minimizar1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Icono_Restaurar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Icono_Restaurar1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.limpiar">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.limpiar1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.limpieza">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.limpieza1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA_FINAL">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA_FINAL1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA_FINAL11">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA_FINAL2">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Mobile_Menu_Icon">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.Mobile_Menu_Icon1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.pallet__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.pallet__1_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.perfil_del_usuario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.perfil_del_usuario1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.producto">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.producto1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.reloj_de_pared">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.reloj_de_pared1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.suave_nublado_es_degradado_colores_pastel_fondo_abstracto_cielo_color_dulce_6529_729">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.suave_nublado_es_degradado_colores_pastel_fondo_abstracto_cielo_color_dulce_6529_7291">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.telephone__1_">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.telephone__1_1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.usuario">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Clase_II_Parcial.My.Resources.Resources.usuario1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.empleadosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.stockDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.telefonosDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.empleadosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.stockRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.telefonosRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.empleadosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.stockRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSet.telefonosRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSetTableAdapters.empleadosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSetTableAdapters.stockTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSetTableAdapters.telefonosTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Clase_II_Parcial.CompuCenterDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Clase_II_Parcial.CompuCenterDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Clase_II_Parcial.CompuCenterDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Clase_II_Parcial.CompuCenterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Clase_II_Parcial.CompuCenterDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Clase_II_Parcial.CompuCenterDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Clase_II_Parcial.CompuCenterDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Clase_II_Parcial.CompuCenterDataSetTableAdapters.TableAdapterManager.UpdateAll(Clase_II_Parcial.CompuCenterDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Clase_II_Parcial.CompuCenterDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

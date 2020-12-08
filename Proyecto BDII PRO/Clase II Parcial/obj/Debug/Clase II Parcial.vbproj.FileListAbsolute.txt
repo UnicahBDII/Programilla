@@ -21,3 +21,10 @@ C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Pa
 C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Resources.resources
 C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.vbproj.GenerateResource.cache
 C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.vbproj.CoreCompileInputs.cache
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\bin\Debug\Clase II Parcial.exe.config
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\bin\Debug\Clase II Parcial.exe
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\bin\Debug\Clase II Parcial.pdb
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\bin\Debug\Clase II Parcial.xml
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.exe
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.xml
+C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.pdb
