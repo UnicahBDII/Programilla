@@ -266,6 +266,7 @@ Public Class EMPLEADOS
 
             If conexion.ingresarEmpleado(idcodigo, Identidad, nombre, direccion, edad, sexo, idpuesto) Then
                 MessageBox.Show("Información Actualizada correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                consultarEmpleado()
             Else
                 MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
@@ -290,7 +291,9 @@ Public Class EMPLEADOS
 
 
             If conexion.actualizarEmpleado(identidad, nombre, direccion, edad, sexo, idpuesto) Then
+
                 MessageBox.Show("Información Actualizada correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                consultarEmpleado()
             Else
                 MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -307,6 +310,7 @@ Public Class EMPLEADOS
 
             If conexion.eliminarEmpleado(identidad) Then
                 MessageBox.Show("Información Eliminada correctamente", "Eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                consultarEmpleado()
             Else
                 MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
@@ -314,8 +318,31 @@ Public Class EMPLEADOS
             MsgBox(ex.Message)
         End Try
     End Sub
-    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
 
+    Private Sub buscarEmpleado()
+
+        Dim identidad
+
+            identidad = txtIdentidad.Text
+
+        Try
+            DataT = conexion.BuscarEmpleado(identidad)
+            If DataT.Rows.Count <> 0 Then
+                    DGListado.DataSource = DataT
+
+
+                MessageBox.Show("Información Encontrada del Empleado", "Encontrado", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+            Else
+                    DGListado.DataSource = Nothing
+                    MessageBox.Show("Error al consultar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+    End Sub
+    Private Sub btnBuscar_Click(sender As Object, e As EventArgs) Handles btnBuscar.Click
+        buscarEmpleado()
     End Sub
 
     Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
@@ -328,9 +355,8 @@ Public Class EMPLEADOS
     End Sub
     Private Sub consultarEmpleado()
 
-        Dim foto As New DataGridViewImageColumn()
         Try
-            DataT = conexion.consulta
+            DataT = conexion.consulta("Center.empleados")
             If DataT.Rows.Count <> 0 Then
                 DGListado.DataSource = DataT
             Else

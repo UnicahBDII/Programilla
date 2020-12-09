@@ -22,10 +22,10 @@ Public Class conexion
         End Try
     End Sub
     '------------------------------------------------------------procedimientos empleados--------------------------------------------
-    Public Function consulta()
+    Public Function consulta(nombretabla As String)
         Try
             conexion.Open()
-            adaptador = New SqlDataAdapter("Select * from Center.empleados", conexion)
+            adaptador = New SqlDataAdapter("Select * from " & nombretabla, conexion)
             Dim dt As New DataTable
             adaptador.Fill(dt)
             Return dt
@@ -116,6 +116,71 @@ Public Class conexion
             conexion.Close()
         End Try
     End Function
+
+    Public Function BuscarEmpleado(identidad As String)
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.BuscarEmpleado", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@identidad", identidad)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+                conexion.Close()
+            Else
+                Return Nothing
+            End If
+
+
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+
+
+    'procedimientos para productos'
+    Public Function ingresarProductos(id As Integer, codigobarra As String, nombre As String, preciocompra As Decimal,
+                                         precioventa As Decimal, cantidad As Integer, caracteristicas As String, modelo As Integer) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.agregarProducto", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@id", id)
+            cmd.Parameters.AddWithValue("@codigobarra", codigobarra)
+            cmd.Parameters.AddWithValue("@nombre", nombre)
+            cmd.Parameters.AddWithValue("@precio", preciocompra)
+            cmd.Parameters.AddWithValue("@precioventa", precioventa)
+            cmd.Parameters.AddWithValue("@cantidad", cantidad)
+            cmd.Parameters.AddWithValue("@caracteristica", caracteristicas)
+            cmd.Parameters.AddWithValue("@modelo", modelo)
+
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+
+
 End Class
 
 
