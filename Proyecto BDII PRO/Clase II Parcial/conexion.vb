@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class conexion
 
-    Public conexion As SqlConnection = New SqlConnection("Data Source=DESKTOP-LGDBE5Q\SQLEXPRESS;Initial Catalog=CompuCenter;Integrated Security=True")
+    Public conexion As SqlConnection = New SqlConnection("Data Source=DESKTOP-IFG9AL0\SQLEXPRESS;Initial Catalog=CompuCenter;Integrated Security=True")
     Public ds As DataSet = New DataSet()
     Public da As SqlDataAdapter
     Public lectura As SqlDataReader
@@ -461,6 +461,370 @@ Public Class conexion
             conexion.Close()
         End Try
         conexion.Close()
+    End Function
+
+    'Procedimientos Telefonos Empleados
+    Public Function ingresarTelefonosEmpleado(Telefono As Integer, Tipo_Paquete As Integer) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.agregarTelefonosEmpleados", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@Telefono", Telefono)
+            cmd.Parameters.AddWithValue("@Tipo_Paquete", Tipo_Paquete)
+
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+
+    Public Function actualizarTelefonosEmpleado(Id_Telefono As Integer, Telefono As Integer, Tipo_Paquete As Integer) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.actualizarTelefonosEmpleados", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@Id_Telefono", Id_Telefono)
+            cmd.Parameters.AddWithValue("@Telefono", Telefono)
+            cmd.Parameters.AddWithValue("@Tipo_Paquete", Tipo_Paquete)
+
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    'Procedimientos Usuario
+    Public Function agregarUsuario(id As Integer,
+    nombre As String,
+    apellido As String,
+    usuario As String,
+    contrasena As String,
+    correo As String,
+    rol As Integer,
+    estado As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.agregarUsuarios", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@id", id)
+            cmd.Parameters.AddWithValue("@nombre", nombre)
+            cmd.Parameters.AddWithValue("@apellido", apellido)
+            cmd.Parameters.AddWithValue("@usuario", usuario)
+            cmd.Parameters.AddWithValue("@contraseña", contrasena)
+            cmd.Parameters.AddWithValue("@correo", correo)
+            cmd.Parameters.AddWithValue("@rol", rol)
+            cmd.Parameters.AddWithValue("@estado", estado)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    Public Function ActualizarUsuario(id As Integer,
+    nombre As String,
+    apellido As String,
+    usuario As String,
+    contrasena As String,
+    correo As String,
+    rol As Integer,
+    estado As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.actualizarUsuario", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@id", id)
+            cmd.Parameters.AddWithValue("@nombre", nombre)
+            cmd.Parameters.AddWithValue("@apellido", apellido)
+            cmd.Parameters.AddWithValue("@usuario", usuario)
+            cmd.Parameters.AddWithValue("@contraseña", contrasena)
+            cmd.Parameters.AddWithValue("@correo", correo)
+            cmd.Parameters.AddWithValue("@rol", rol)
+            cmd.Parameters.AddWithValue("@estado", estado)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    Public Function BuscarUsuario(nombreUsuario As String)
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.buscarUser", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@nombreUsuario", nombreUsuario)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+                conexion.Close()
+            Else
+                Return Nothing
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    'Procedimientos de marca
+    Public Function ingresarMarca(marca As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.insertarMarca", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@marca", marca)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    Public Function ActualizarMarca(id As Integer, marca As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.modificarMarca", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@id", id)
+            cmd.Parameters.AddWithValue("@marca", marca)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    Public Function BuscarMarca(marca As String)
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.buscarMarca", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@marca", marca)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+                conexion.Close()
+            Else
+                Return Nothing
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+
+    End Function
+
+    'Procedimientos de modelo
+    Public Function IngresarModelo(modelo As String, marca As Integer) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.insertarModelo", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@modelo", modelo)
+            cmd.Parameters.AddWithValue("@marca", marca)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    Public Function ActualizarModelo(id As Integer, modelo As String, marca As Integer) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.modificarModelo", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@id", id)
+            cmd.Parameters.AddWithValue("@modelo", modelo)
+            cmd.Parameters.AddWithValue("@marca", marca)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    Public Function BuscarModelo(modelo As String)
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.buscarModelo", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@modelo", modelo)
+
+            If cmd.ExecuteNonQuery Then
+                Dim dt As New DataTable
+                Dim da As New SqlDataAdapter(cmd)
+                da.Fill(dt)
+                Return dt
+                conexion.Close()
+            Else
+                Return Nothing
+            End If
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    'Procedimientos de Cliente
+    Public Function IngresarCliente(identidad As String, nombre As String, numero As String, apellido As String,
+                                    direccion As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.insertarCliente", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@identidad", identidad)
+            cmd.Parameters.AddWithValue("@nombre", nombre)
+            cmd.Parameters.AddWithValue("@numero", numero)
+            cmd.Parameters.AddWithValue("@apellido", apellido)
+            cmd.Parameters.AddWithValue("@direccion", direccion)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+
+    Public Function ActualizarCliente(identidad As String, nombre As String, numero As String, apellido As String,
+                                       direccion As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.ModificarCliente", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@identidad", identidad)
+            cmd.Parameters.AddWithValue("@nombre", nombre)
+            cmd.Parameters.AddWithValue("@numero", numero)
+            cmd.Parameters.AddWithValue("@apellido", apellido)
+            cmd.Parameters.AddWithValue("@direccion", direccion)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    Public Function eliminarCliente(identidad As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.eliminarCliente", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@identidad", identidad)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
     End Function
 End Class
 

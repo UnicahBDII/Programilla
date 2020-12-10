@@ -23,41 +23,47 @@ Partial Class UsuarioAdministracion
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtContraseña = New System.Windows.Forms.TextBox()
+        Me.txtCorreo = New System.Windows.Forms.TextBox()
+        Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.prueba2 = New System.Windows.Forms.TextBox()
+        Me.txtId = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnBuscar = New System.Windows.Forms.Button()
+        Me.btnEditar = New System.Windows.Forms.Button()
+        Me.btnIngresar = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
+        Me.btnEliminar = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DGListado = New System.Windows.Forms.DataGridView()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.btnBuscar = New System.Windows.Forms.Button()
-        Me.btnEditar = New System.Windows.Forms.Button()
-        Me.btnIngresar = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.txtApellido = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtRol = New System.Windows.Forms.TextBox()
+        Me.cmbEstado = New System.Windows.Forms.ComboBox()
+        Me.dgvRol = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvRol, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.cmbEstado)
+        Me.GroupBox1.Controls.Add(Me.txtRol)
+        Me.GroupBox1.Controls.Add(Me.txtApellido)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.txtContraseña)
+        Me.GroupBox1.Controls.Add(Me.txtCorreo)
+        Me.GroupBox1.Controls.Add(Me.txtUsuario)
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.prueba2)
+        Me.GroupBox1.Controls.Add(Me.txtId)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.btnBuscar)
         Me.GroupBox1.Controls.Add(Me.btnEditar)
@@ -68,159 +74,80 @@ Partial Class UsuarioAdministracion
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.btnLimpiar)
         Me.GroupBox1.Controls.Add(Me.btnEliminar)
-        Me.GroupBox1.Font = New System.Drawing.Font("Bebas Neue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox1.Location = New System.Drawing.Point(365, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(487, 15)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(339, 295)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox1.Size = New System.Drawing.Size(452, 363)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cambio de usuario"
         '
+        'txtContraseña
+        '
+        Me.txtContraseña.Location = New System.Drawing.Point(135, 241)
+        Me.txtContraseña.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtContraseña.Name = "txtContraseña"
+        Me.txtContraseña.Size = New System.Drawing.Size(200, 30)
+        Me.txtContraseña.TabIndex = 45
+        '
+        'txtCorreo
+        '
+        Me.txtCorreo.Location = New System.Drawing.Point(135, 199)
+        Me.txtCorreo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCorreo.Name = "txtCorreo"
+        Me.txtCorreo.Size = New System.Drawing.Size(200, 30)
+        Me.txtCorreo.TabIndex = 44
+        '
+        'txtUsuario
+        '
+        Me.txtUsuario.Location = New System.Drawing.Point(135, 151)
+        Me.txtUsuario.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUsuario.Name = "txtUsuario"
+        Me.txtUsuario.Size = New System.Drawing.Size(200, 30)
+        Me.txtUsuario.TabIndex = 24
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(19, 31)
+        Me.Label7.Location = New System.Drawing.Point(25, 38)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(44, 21)
+        Me.Label7.Size = New System.Drawing.Size(75, 25)
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Codigo"
         '
-        'prueba2
+        'txtId
         '
-        Me.prueba2.Location = New System.Drawing.Point(101, 24)
-        Me.prueba2.Name = "prueba2"
-        Me.prueba2.Size = New System.Drawing.Size(121, 28)
-        Me.prueba2.TabIndex = 4
+        Me.txtId.Location = New System.Drawing.Point(135, 30)
+        Me.txtId.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtId.Name = "txtId"
+        Me.txtId.Size = New System.Drawing.Size(160, 30)
+        Me.txtId.TabIndex = 4
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(21, 210)
+        Me.Label1.Location = New System.Drawing.Point(28, 291)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(28, 21)
+        Me.Label1.Size = New System.Drawing.Size(40, 25)
         Me.Label1.TabIndex = 40
         Me.Label1.Text = "Rol"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(19, 142)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(46, 21)
-        Me.Label9.TabIndex = 34
-        Me.Label9.Text = "Correo"
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(19, 103)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(49, 21)
-        Me.Label8.TabIndex = 32
-        Me.Label8.Text = "Usuario"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(21, 244)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(46, 21)
-        Me.Label6.TabIndex = 27
-        Me.Label6.Text = "Estado"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(19, 176)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 21)
-        Me.Label4.TabIndex = 24
-        Me.Label4.Text = "Contraseña"
-        '
-        'txtNombre
-        '
-        Me.txtNombre.Location = New System.Drawing.Point(101, 58)
-        Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(151, 28)
-        Me.txtNombre.TabIndex = 23
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(19, 65)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(50, 21)
-        Me.Label3.TabIndex = 22
-        Me.Label3.Text = "Nombre"
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.DGListado)
-        Me.GroupBox2.Font = New System.Drawing.Font("Bebas Neue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(347, 413)
-        Me.GroupBox2.TabIndex = 4
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Informacion de Usuario"
-        '
-        'DGListado
-        '
-        Me.DGListado.AllowUserToAddRows = False
-        Me.DGListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGListado.Location = New System.Drawing.Point(6, 24)
-        Me.DGListado.Name = "DGListado"
-        Me.DGListado.Size = New System.Drawing.Size(331, 359)
-        Me.DGListado.TabIndex = 18
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(101, 96)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(151, 28)
-        Me.TextBox1.TabIndex = 24
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(101, 135)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(151, 28)
-        Me.TextBox2.TabIndex = 44
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(101, 169)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(151, 28)
-        Me.TextBox3.TabIndex = 45
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(101, 237)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(151, 28)
-        Me.TextBox5.TabIndex = 47
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(101, 202)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 29)
-        Me.ComboBox1.TabIndex = 5
         '
         'btnBuscar
         '
         Me.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnBuscar.Image = Global.Clase_II_Parcial.My.Resources.Resources.buscar
-        Me.btnBuscar.Location = New System.Drawing.Point(270, 126)
+        Me.btnBuscar.Location = New System.Drawing.Point(360, 155)
+        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(51, 45)
+        Me.btnBuscar.Size = New System.Drawing.Size(68, 55)
         Me.btnBuscar.TabIndex = 38
         Me.btnBuscar.UseVisualStyleBackColor = True
         '
@@ -229,9 +156,10 @@ Partial Class UsuarioAdministracion
         Me.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnEditar.Image = Global.Clase_II_Parcial.My.Resources.Resources.copiar
-        Me.btnEditar.Location = New System.Drawing.Point(270, 75)
+        Me.btnEditar.Location = New System.Drawing.Point(360, 92)
+        Me.btnEditar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEditar.Name = "btnEditar"
-        Me.btnEditar.Size = New System.Drawing.Size(51, 45)
+        Me.btnEditar.Size = New System.Drawing.Size(68, 55)
         Me.btnEditar.TabIndex = 37
         Me.btnEditar.UseVisualStyleBackColor = True
         '
@@ -240,56 +168,192 @@ Partial Class UsuarioAdministracion
         Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnIngresar.Image = Global.Clase_II_Parcial.My.Resources.Resources.editar1
-        Me.btnIngresar.Location = New System.Drawing.Point(270, 24)
+        Me.btnIngresar.Location = New System.Drawing.Point(360, 30)
+        Me.btnIngresar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnIngresar.Name = "btnIngresar"
-        Me.btnIngresar.Size = New System.Drawing.Size(51, 45)
+        Me.btnIngresar.Size = New System.Drawing.Size(68, 55)
         Me.btnIngresar.TabIndex = 36
         Me.btnIngresar.UseVisualStyleBackColor = True
         '
-        'Button1
+        'Label9
         '
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
-        Me.Button1.Image = Global.Clase_II_Parcial.My.Resources.Resources.limpiar
-        Me.Button1.Location = New System.Drawing.Point(270, 228)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(51, 45)
-        Me.Button1.TabIndex = 3
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(25, 208)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(72, 25)
+        Me.Label9.TabIndex = 34
+        Me.Label9.Text = "Correo"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(25, 160)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(79, 25)
+        Me.Label8.TabIndex = 32
+        Me.Label8.Text = "Usuario"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(28, 333)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(73, 25)
+        Me.Label6.TabIndex = 27
+        Me.Label6.Text = "Estado"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(25, 250)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(114, 25)
+        Me.Label4.TabIndex = 24
+        Me.Label4.Text = "Contraseña"
+        '
+        'txtNombre
+        '
+        Me.txtNombre.Location = New System.Drawing.Point(135, 71)
+        Me.txtNombre.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtNombre.Name = "txtNombre"
+        Me.txtNombre.Size = New System.Drawing.Size(200, 30)
+        Me.txtNombre.TabIndex = 23
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(25, 80)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(81, 25)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Text = "Nombre"
+        '
+        'btnLimpiar
+        '
+        Me.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
+        Me.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnLimpiar.Image = Global.Clase_II_Parcial.My.Resources.Resources.limpiar
+        Me.btnLimpiar.Location = New System.Drawing.Point(360, 281)
+        Me.btnLimpiar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(68, 55)
+        Me.btnLimpiar.TabIndex = 3
+        Me.btnLimpiar.UseVisualStyleBackColor = True
         '
         'btnEliminar
         '
         Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnEliminar.Image = Global.Clase_II_Parcial.My.Resources.Resources.eliminar
-        Me.btnEliminar.Location = New System.Drawing.Point(270, 177)
+        Me.btnEliminar.Location = New System.Drawing.Point(360, 218)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(51, 45)
+        Me.btnEliminar.Size = New System.Drawing.Size(68, 55)
         Me.btnEliminar.TabIndex = 2
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
-        'Usuario
+        'GroupBox2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.GroupBox2.Controls.Add(Me.DGListado)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.GroupBox2.Location = New System.Drawing.Point(16, 15)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(463, 508)
+        Me.GroupBox2.TabIndex = 4
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Informacion de Usuario"
+        '
+        'DGListado
+        '
+        Me.DGListado.AllowUserToAddRows = False
+        Me.DGListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGListado.Location = New System.Drawing.Point(8, 30)
+        Me.DGListado.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DGListado.Name = "DGListado"
+        Me.DGListado.RowHeadersWidth = 51
+        Me.DGListado.Size = New System.Drawing.Size(441, 442)
+        Me.DGListado.TabIndex = 18
+        '
+        'txtApellido
+        '
+        Me.txtApellido.Location = New System.Drawing.Point(135, 110)
+        Me.txtApellido.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtApellido.Name = "txtApellido"
+        Me.txtApellido.Size = New System.Drawing.Size(200, 30)
+        Me.txtApellido.TabIndex = 49
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(25, 119)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(82, 25)
+        Me.Label2.TabIndex = 48
+        Me.Label2.Text = "Apellido"
+        '
+        'txtRol
+        '
+        Me.txtRol.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower
+        Me.txtRol.Location = New System.Drawing.Point(135, 281)
+        Me.txtRol.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtRol.Name = "txtRol"
+        Me.txtRol.Size = New System.Drawing.Size(200, 30)
+        Me.txtRol.TabIndex = 50
+        '
+        'cmbEstado
+        '
+        Me.cmbEstado.FormattingEnabled = True
+        Me.cmbEstado.Items.AddRange(New Object() {"activo", "inactivo"})
+        Me.cmbEstado.Location = New System.Drawing.Point(135, 323)
+        Me.cmbEstado.Name = "cmbEstado"
+        Me.cmbEstado.Size = New System.Drawing.Size(200, 33)
+        Me.cmbEstado.TabIndex = 51
+        '
+        'dgvRol
+        '
+        Me.dgvRol.AllowUserToAddRows = False
+        Me.dgvRol.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvRol.Location = New System.Drawing.Point(487, 386)
+        Me.dgvRol.Margin = New System.Windows.Forms.Padding(4)
+        Me.dgvRol.Name = "dgvRol"
+        Me.dgvRol.RowHeadersWidth = 51
+        Me.dgvRol.Size = New System.Drawing.Size(452, 101)
+        Me.dgvRol.TabIndex = 19
+        '
+        'UsuarioAdministracion
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(734, 444)
+        Me.ClientSize = New System.Drawing.Size(979, 546)
+        Me.Controls.Add(Me.dgvRol)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Usuario"
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Name = "UsuarioAdministracion"
         Me.Text = "Usuario"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvRol, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents prueba2 As TextBox
+    Friend WithEvents txtId As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnBuscar As Button
     Friend WithEvents btnEditar As Button
@@ -300,13 +364,16 @@ Partial Class UsuarioAdministracion
     Friend WithEvents Label4 As Label
     Friend WithEvents txtNombre As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnEliminar As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DGListado As DataGridView
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtContraseña As TextBox
+    Friend WithEvents txtCorreo As TextBox
+    Friend WithEvents txtUsuario As TextBox
+    Friend WithEvents txtApellido As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtRol As TextBox
+    Friend WithEvents cmbEstado As ComboBox
+    Friend WithEvents dgvRol As DataGridView
 End Class

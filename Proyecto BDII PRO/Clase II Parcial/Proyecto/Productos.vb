@@ -10,6 +10,7 @@
 
     Private Sub Productos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         consultarproducto()
+        MostrarModelo()
     End Sub
 
 
@@ -59,5 +60,23 @@
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         ingresarProducto()
+    End Sub
+
+    Private Sub dgvModelos_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvModelos.CellContentClick
+
+    End Sub
+
+    Private Sub MostrarModelo()
+        Try
+            DataT = conexion.consulta("dbo.vMarcas")
+            If DataT.Rows.Count <> 0 Then
+                dgvModelos.DataSource = DataT
+            Else
+                dgvModelos.DataSource = Nothing
+                MessageBox.Show("Error al consultar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class

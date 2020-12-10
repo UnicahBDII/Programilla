@@ -99,6 +99,12 @@
     <Compile Include="EXAMEN\Examen-II-Parcial.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Proyecto\Clientes.Designer.vb">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Proyecto\Compras.Designer.vb">
       <DependentUpon>Compras.vb</DependentUpon>
     </Compile>
@@ -127,6 +133,12 @@
       <DependentUpon>MainPageUsuario.vb</DependentUpon>
     </Compile>
     <Compile Include="Proyecto\MainPageUsuario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyecto\Marca y Modelo.Designer.vb">
+      <DependentUpon>Marca y Modelo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\Marca y Modelo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Proyecto\Productos.Designer.vb">
@@ -163,6 +175,12 @@
       <DependentUpon>PantallaDeCarga.vb</DependentUpon>
     </Compile>
     <Compile Include="Proyecto\PantallaDeCarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyecto\TelefonosEmpleados.Designer.vb">
+      <DependentUpon>TelefonosEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\TelefonosEmpleados.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Proyecto\UsuarioAdministracion.Designer.vb">
@@ -222,6 +240,9 @@
     <EmbeddedResource Include="EXAMEN\Examen-II-Parcial.resx">
       <DependentUpon>Examen-II-Parcial.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\Clientes.resx">
+      <DependentUpon>Clientes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\Compras.resx">
       <DependentUpon>Compras.vb</DependentUpon>
     </EmbeddedResource>
@@ -236,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\MainPageUsuario.resx">
       <DependentUpon>MainPageUsuario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\Marca y Modelo.resx">
+      <DependentUpon>Marca y Modelo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\Productos.resx">
       <DependentUpon>Productos.vb</DependentUpon>
@@ -254,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\PantallaDeCarga.resx">
       <DependentUpon>PantallaDeCarga.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\TelefonosEmpleados.resx">
+      <DependentUpon>TelefonosEmpleados.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\UsuarioAdministracion.resx">
       <DependentUpon>UsuarioAdministracion.vb</DependentUpon>
