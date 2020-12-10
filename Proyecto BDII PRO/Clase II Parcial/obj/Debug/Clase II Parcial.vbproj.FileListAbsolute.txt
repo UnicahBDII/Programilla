@@ -57,3 +57,4 @@ C:\Users\walth\Source\Repos\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\D
 C:\Users\walth\Source\Repos\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.exe
 C:\Users\walth\Source\Repos\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.xml
 C:\Users\walth\Source\Repos\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.pdb
+C:\Users\walth\Source\Repos\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.detalleventas.resources

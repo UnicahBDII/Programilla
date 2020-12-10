@@ -38,21 +38,26 @@
             nombre = txtnombre.Text
             preciocompra = txtpreciocompra.Text
             precioventa = txtventa.Text
-            sexo = cmbSexo.SelectedItem
-            idpuesto = txtidpuesto.Text
+            cantidad = txtcantidad.Text
+            caracteristicas = txtcaracteristica.Text
+            modelo = txtmodelo.Text
 
 
 
-            If conexion.ingresarEmpleado(idcodigo, Identidad, nombre, direccion, edad, sexo, idpuesto) Then
-                MessageBox.Show("Información Actualizada correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                consultarEmpleado()
+            If conexion.ingresarProductos(id, codigobarra, nombre, preciocompra, precioventa, cantidad, caracteristicas, modelo) Then
+                MessageBox.Show("producto ingresado correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                consultarproducto()
             Else
-                MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("producto no ingresado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
 
 
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
+        ingresarProducto()
     End Sub
 End Class

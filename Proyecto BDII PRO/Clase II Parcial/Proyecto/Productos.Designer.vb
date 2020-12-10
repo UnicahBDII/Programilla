@@ -25,6 +25,8 @@ Partial Class Productos
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DGListado = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtpreciocompra = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.txtcaracteristica = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtmodelo = New System.Windows.Forms.TextBox()
@@ -48,8 +50,6 @@ Partial Class Productos
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.txtpreciocompra = New System.Windows.Forms.TextBox()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -110,6 +110,22 @@ Partial Class Productos
         Me.GroupBox1.Size = New System.Drawing.Size(339, 515)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
+        '
+        'txtpreciocompra
+        '
+        Me.txtpreciocompra.Location = New System.Drawing.Point(119, 187)
+        Me.txtpreciocompra.Name = "txtpreciocompra"
+        Me.txtpreciocompra.Size = New System.Drawing.Size(121, 26)
+        Me.txtpreciocompra.TabIndex = 53
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(0, 190)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(113, 20)
+        Me.Label10.TabIndex = 52
+        Me.Label10.Text = "Precio.Compra"
         '
         'txtcaracteristica
         '
@@ -310,22 +326,6 @@ Partial Class Productos
         Me.btnEliminar.Size = New System.Drawing.Size(51, 45)
         Me.btnEliminar.TabIndex = 2
         Me.btnEliminar.UseVisualStyleBackColor = True
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(0, 190)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(113, 20)
-        Me.Label10.TabIndex = 52
-        Me.Label10.Text = "Precio.Compra"
-        '
-        'txtpreciocompra
-        '
-        Me.txtpreciocompra.Location = New System.Drawing.Point(119, 187)
-        Me.txtpreciocompra.Name = "txtpreciocompra"
-        Me.txtpreciocompra.Size = New System.Drawing.Size(121, 26)
-        Me.txtpreciocompra.TabIndex = 53
         '
         'Productos
         '
