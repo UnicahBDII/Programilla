@@ -102,7 +102,7 @@ Partial Class Registro
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Bebas Neue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 38)
         Me.GroupBox1.Name = "GroupBox1"
@@ -126,7 +126,7 @@ Partial Class Registro
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Location = New System.Drawing.Point(19, 222)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(243, 25)
+        Me.CheckBox1.Size = New System.Drawing.Size(309, 24)
         Me.CheckBox1.TabIndex = 22
         Me.CheckBox1.Text = "Acepta nuestros terminos y condiciones"
         Me.CheckBox1.UseVisualStyleBackColor = True
@@ -135,7 +135,7 @@ Partial Class Registro
         '
         Me.TextBox1.Location = New System.Drawing.Point(124, 70)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(156, 28)
+        Me.TextBox1.Size = New System.Drawing.Size(156, 26)
         Me.TextBox1.TabIndex = 21
         '
         'Label1
@@ -143,7 +143,7 @@ Partial Class Registro
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(15, 77)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 21)
+        Me.Label1.Size = New System.Drawing.Size(65, 20)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Apellido"
         '
@@ -152,7 +152,7 @@ Partial Class Registro
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(15, 179)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(81, 21)
+        Me.Label8.Size = New System.Drawing.Size(102, 20)
         Me.Label8.TabIndex = 19
         Me.Label8.Text = "Confirmacion"
         '
@@ -161,7 +161,7 @@ Partial Class Registro
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(15, 145)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 21)
+        Me.Label7.Size = New System.Drawing.Size(92, 20)
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Contraseña"
         '
@@ -187,28 +187,28 @@ Partial Class Registro
         '
         Me.txtMunicipio.Location = New System.Drawing.Point(124, 138)
         Me.txtMunicipio.Name = "txtMunicipio"
-        Me.txtMunicipio.Size = New System.Drawing.Size(156, 28)
+        Me.txtMunicipio.Size = New System.Drawing.Size(156, 26)
         Me.txtMunicipio.TabIndex = 15
         '
         'txtBarrio
         '
         Me.txtBarrio.Location = New System.Drawing.Point(124, 172)
         Me.txtBarrio.Name = "txtBarrio"
-        Me.txtBarrio.Size = New System.Drawing.Size(156, 28)
+        Me.txtBarrio.Size = New System.Drawing.Size(156, 26)
         Me.txtBarrio.TabIndex = 14
         '
         'txtDepartamento
         '
         Me.txtDepartamento.Location = New System.Drawing.Point(124, 104)
         Me.txtDepartamento.Name = "txtDepartamento"
-        Me.txtDepartamento.Size = New System.Drawing.Size(156, 28)
+        Me.txtDepartamento.Size = New System.Drawing.Size(156, 26)
         Me.txtDepartamento.TabIndex = 13
         '
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(124, 36)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(156, 28)
+        Me.txtNombre.Size = New System.Drawing.Size(156, 26)
         Me.txtNombre.TabIndex = 9
         '
         'Label3
@@ -216,7 +216,7 @@ Partial Class Registro
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(15, 113)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(108, 21)
+        Me.Label3.Size = New System.Drawing.Size(146, 20)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Nombre de Usuario"
         '
@@ -225,7 +225,7 @@ Partial Class Registro
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(15, 43)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(50, 21)
+        Me.Label2.Size = New System.Drawing.Size(65, 20)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Nombre"
         '

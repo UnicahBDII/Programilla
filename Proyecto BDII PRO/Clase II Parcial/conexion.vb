@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class conexion
 
-    Public conexion As SqlConnection = New SqlConnection("Data Source=DESKTOP-IFG9AL0\SQLEXPRESS;Initial Catalog=CompuCenter;Integrated Security=True")
+    Public conexion As SqlConnection = New SqlConnection("Data Source=DESKTOP-LGDBE5Q\SQLEXPRESS;Initial Catalog=CompuCenter;Integrated Security=True")
     Public ds As DataSet = New DataSet()
     Public da As SqlDataAdapter
     Public lectura As SqlDataReader
@@ -166,6 +166,33 @@ Public Class conexion
             cmd.Parameters.AddWithValue("@caracteristica", caracteristicas)
             cmd.Parameters.AddWithValue("@modelo", modelo)
 
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+    Public Function actualizarProducto(id As Integer, nombre As String, preciocompra As Decimal,
+                                         precioventa As Decimal, cantidad As Integer, caracteristicas As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.actualizarProducto", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@id", id)
+            cmd.Parameters.AddWithValue("@nombre", nombre)
+            cmd.Parameters.AddWithValue("@precio", preciocompra)
+            cmd.Parameters.AddWithValue("@precioventa", precioventa)
+            cmd.Parameters.AddWithValue("@cantidad", cantidad)
+            cmd.Parameters.AddWithValue("@caracteristica", caracteristicas)
 
             If cmd.ExecuteNonQuery Then
                 Return True

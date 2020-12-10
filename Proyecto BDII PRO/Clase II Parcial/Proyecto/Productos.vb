@@ -79,4 +79,60 @@
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub actualizarEmpleado()
+
+        Try
+                Dim id As Integer, codigobarra As String, nombre As String, preciocompra As Decimal,
+                precioventa As Decimal, cantidad As Integer, caracteristicas As String, modelo As Integer
+
+                id = idtxt.Text
+                codigobarra = txtcodbarra.Text
+                nombre = txtnombre.Text
+                preciocompra = txtpreciocompra.Text
+                precioventa = txtventa.Text
+                cantidad = txtcantidad.Text
+                caracteristicas = txtcaracteristica.Text
+                modelo = txtmodelo.Text
+
+
+
+                If conexion.actualizarProducto(id, nombre, preciocompra, precioventa, cantidad, caracteristicas) Then
+
+                    MessageBox.Show("Información Actualizada correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    consultarproducto()
+                Else
+                    MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                End If
+            Catch ex As Exception
+                MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub DGListado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListado.CellContentClick
+        Try
+
+            Dim DGlistados As DataGridViewRow = DGListado.Rows(e.RowIndex)
+            idtxt.Text = DGlistados.Cells(0).Value.ToString()
+            txtcodbarra.Text = DGlistados.Cells(1).Value.ToString()
+            txttiproducto.Text = DGlistados.Cells(2).Value.ToString()
+            txtnombre.Text = DGlistados.Cells(3).Value.ToString()
+            txtpreciocompra.Text = DGlistados.Cells(4).Value.ToString()
+            txtventa.Text = DGlistados.Cells(5).Value.ToString()
+            txtcantidad.Text = DGlistados.Cells(6).Value.ToString()
+            txtestado.Text = DGlistados.Cells(7).Value.ToString()
+            txtmodelo.Text = DGlistados.Cells(8).Value.ToString()
+
+
+            btnEliminar.Enabled = True
+            btnEditar.Enabled = True
+
+        Catch ex As Exception
+            MessageBox.Show("no se lleno por: " + ex.ToString)
+        End Try
+    End Sub
 End Class

@@ -61,3 +61,36 @@ C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Pa
 C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.TelefonosEmpleados.resources
 C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Marca_y_Modelo.resources
 C:\Users\osori\Source\Repos\UnicahBDII\Programilla\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Clientes.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\bin\Debug\Clase II Parcial.exe.config
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\bin\Debug\Clase II Parcial.exe
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\bin\Debug\Clase II Parcial.pdb
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\bin\Debug\Clase II Parcial.xml
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.vbprojAssemblyReference.cache
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Arreglos.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.LibretaDeAhorro.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Examen_II_Parcial.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Clientes.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Compras.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.detalleventas.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.EMPLEADOS.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Login.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.MainPageUsuario.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Marca_y_Modelo.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Productos.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Registro.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Stock.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Telefono.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.MainPage.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.PantallaDeCarga.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.TelefonosEmpleados.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.UsuarioAdministracion.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Usuario.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Ventas.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.EntregaBolsaSolidaria.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.MenuPersonalizado.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Resources.resources
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.vbproj.GenerateResource.cache
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.vbproj.CoreCompileInputs.cache
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.exe
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.xml
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.pdb
