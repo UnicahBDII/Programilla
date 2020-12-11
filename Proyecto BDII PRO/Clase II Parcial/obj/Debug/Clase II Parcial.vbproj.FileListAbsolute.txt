@@ -94,3 +94,4 @@ C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\
 C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.exe
 C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.xml
 C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase II Parcial.pdb
+C:\Users\walth\Source\Repos\Programilla2\Proyecto BDII PRO\Clase II Parcial\obj\Debug\Clase_II_Parcial.Factura.resources

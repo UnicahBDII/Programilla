@@ -58,6 +58,26 @@
         End Try
     End Sub
 
+    Private Sub eliminarProduct()
+        Try
+            Dim id As Integer
+            Dim codbarra As String
+
+            id = idtxt.Text
+            codbarra = txtcodbarra.Text
+
+
+            If conexion.eliminarProducto(id, codbarra) Then
+                MessageBox.Show("Información Eliminada correctamente", "Eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                consultarproducto()
+            Else
+                MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         ingresarProducto()
     End Sub
@@ -84,32 +104,32 @@
 
     End Sub
 
-    Private Sub actualizarEmpleado()
+    Private Sub actualizarproduct()
 
         Try
-                Dim id As Integer, codigobarra As String, nombre As String, preciocompra As Decimal,
+            Dim id As Integer, codigobarra As String, nombre As String, preciocompra As Decimal,
                 precioventa As Decimal, cantidad As Integer, caracteristicas As String, modelo As Integer
 
-                id = idtxt.Text
-                codigobarra = txtcodbarra.Text
-                nombre = txtnombre.Text
-                preciocompra = txtpreciocompra.Text
-                precioventa = txtventa.Text
-                cantidad = txtcantidad.Text
-                caracteristicas = txtcaracteristica.Text
-                modelo = txtmodelo.Text
+            id = idtxt.Text
+            codigobarra = txtcodbarra.Text
+            nombre = txtnombre.Text
+            preciocompra = txtpreciocompra.Text
+            precioventa = txtventa.Text
+            cantidad = txtcantidad.Text
+            caracteristicas = txtcaracteristica.Text
+            modelo = txtmodelo.Text
 
 
 
-                If conexion.actualizarProducto(id, nombre, preciocompra, precioventa, cantidad, caracteristicas) Then
+            If conexion.actualizarProducto(id, nombre, preciocompra, precioventa, cantidad, caracteristicas) Then
 
-                    MessageBox.Show("Información Actualizada correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    consultarproducto()
-                Else
-                    MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End If
-            Catch ex As Exception
-                MsgBox(ex.Message)
+                MessageBox.Show("Información Actualizada correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                consultarproducto()
+            Else
+                MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
         End Try
     End Sub
 
@@ -124,8 +144,9 @@
             txtpreciocompra.Text = DGlistados.Cells(4).Value.ToString()
             txtventa.Text = DGlistados.Cells(5).Value.ToString()
             txtcantidad.Text = DGlistados.Cells(6).Value.ToString()
-            txtestado.Text = DGlistados.Cells(7).Value.ToString()
-            txtmodelo.Text = DGlistados.Cells(8).Value.ToString()
+            txtcaracteristica.Text = DGlistados.Cells(7).Value.ToString()
+            txtestado.Text = DGlistados.Cells(8).Value.ToString()
+            txtmodelo.Text = DGlistados.Cells(9).Value.ToString()
 
 
             btnEliminar.Enabled = True
@@ -134,5 +155,14 @@
         Catch ex As Exception
             MessageBox.Show("no se lleno por: " + ex.ToString)
         End Try
+    End Sub
+
+    Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
+        eliminarProduct()
+    End Sub
+
+    Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
+        actualizarproduct()
+
     End Sub
 End Class

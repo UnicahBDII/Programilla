@@ -123,6 +123,12 @@
     <Compile Include="Proyecto\EMPLEADOS.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Proyecto\Factura.Designer.vb">
+      <DependentUpon>Factura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\Factura.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Proyecto\Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
@@ -251,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\EMPLEADOS.resx">
       <DependentUpon>EMPLEADOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\Factura.resx">
+      <DependentUpon>Factura.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

@@ -207,6 +207,28 @@ Public Class conexion
         End Try
     End Function
 
+    Public Function eliminarProducto(id As Integer, codbarra As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.eliminarProducto", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@id", id)
+            cmd.Parameters.AddWithValue("@codigobarra", codbarra)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
     'Procedimientos para ventas'
     Public Function ingresarVenta(idcodigo As Integer, idcliente As Integer, idempleado As Integer, fecha As String,
                                      formapago As Integer, numerofactura As Integer, total As Decimal) As Boolean
@@ -373,7 +395,7 @@ Public Class conexion
 
                     Return valorARetornar
                 Case 4
-                    cmd.CommandText = ("SELECT formapago FROM Center.venta where id = " & numero)
+                    cmd.CommandText = ("SELECT total FROM Center.venta where id = " & numero)
 
                     conexion.Open()
 
@@ -408,6 +430,132 @@ Public Class conexion
         End Try
 
     End Function
+
+
+    Function retornarventaFactura(ByVal contador As Integer)
+        Try
+
+            Dim valorARetornar As String
+            Dim cmd As SqlCommand = conexion.CreateCommand()
+
+            numero = retornarIdventa()
+
+            Select Case contador
+                Case 0
+                    cmd.CommandText = ("SELECT id FROM Center.venta where id = " & numero)
+
+                    conexion.Open()
+
+                    Dim value As Object = cmd.ExecuteScalar()
+
+                    valorARetornar = value
+                    conexion.Close()
+
+                    Return valorARetornar
+
+                Case 1
+                    cmd.CommandText = ("SELECT nombre FROM Center.venta inner join Center.empleados on Center.venta.idempleado=Center.empleados.IdCodigo and Center.venta.id =  " & numero)
+
+                    conexion.Open()
+
+                    Dim value As Object = cmd.ExecuteScalar()
+
+                    valorARetornar = value
+                    conexion.Close()
+
+                    Return valorARetornar
+                Case 2
+                    cmd.CommandText = ("SELECT concat(nombre,' ', apellido) FROM Center.venta inner join Center.cliente on Center.venta.idcliente=Center.cliente.id and Center.venta.id = " & numero)
+
+                    conexion.Open()
+
+                    Dim value As Object = cmd.ExecuteScalar()
+
+                    valorARetornar = value
+                    conexion.Close()
+
+                    Return valorARetornar
+                Case 3
+                    cmd.CommandText = ("SELECT  fecha FROM Center.venta where id = " & numero)
+
+                    conexion.Open()
+
+                    Dim value As Object = cmd.ExecuteScalar()
+
+                    valorARetornar = value
+                    conexion.Close()
+
+                    Return valorARetornar
+                Case 4
+                    cmd.CommandText = ("SELECT total FROM Center.venta where id = " & numero)
+
+                    conexion.Open()
+
+                    Dim value As Object = cmd.ExecuteScalar()
+
+                    valorARetornar = value
+                    conexion.Close()
+
+                    Return valorARetornar
+
+                Case 5
+
+                    Dim sentencia As String
+                    sentencia = "SELECT nombre FROM Center.venta inner join Center.empleados on Center.venta.idempleado=Center.empleados.IdCodigo and Center.venta.id = 30"
+                    cmd.CommandText = (sentencia)
+
+                    conexion.Open()
+                    Dim lectura As SqlDataReader
+                    lectura = cmd.ExecuteReader
+                    Dim texto As String
+                    texto = lectura(0).ToString
+
+
+                    Dim value As Object = cmd.ExecuteScalar()
+
+                    valorARetornar = value
+                    conexion.Close()
+
+                    Return texto
+            End Select
+
+
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            conexion.Close()
+        Finally
+            conexion.Close()
+        End Try
+
+    End Function
+
+
+    Function retornaremp()
+        Dim valorARetornar As String
+        Dim cmd As SqlCommand = conexion.CreateCommand()
+
+
+        Try
+            cmd.CommandText = ("SELECT nombre FROM Center.venta inner join Center.empleados on Center.venta.idempleado=Center.empleados.IdCodigo and Center.venta.id =  " & numero)
+
+            conexion.Open()
+
+            Dim value As Object = cmd.ExecuteScalar()
+
+            valorARetornar = value
+            conexion.Close()
+
+            Return valorARetornar
+
+        Catch ex As Exception
+
+        End Try
+
+
+
+    End Function
+
 
     Public Function insertardetalleVenta(iddetalleventa As Integer, idventa As Integer, idProducto As Integer, cantidad As Integer,
                                    precio As Decimal) As Boolean

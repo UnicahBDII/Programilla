@@ -43,6 +43,9 @@ Partial Class detalleventas
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txttotal = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -206,7 +209,7 @@ Partial Class detalleventas
         'Button1
         '
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
-        Me.Button1.Location = New System.Drawing.Point(480, 446)
+        Me.Button1.Location = New System.Drawing.Point(422, 464)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 47)
         Me.Button1.TabIndex = 35
@@ -216,18 +219,48 @@ Partial Class detalleventas
         'Button2
         '
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
-        Me.Button2.Location = New System.Drawing.Point(591, 446)
+        Me.Button2.Location = New System.Drawing.Point(538, 464)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 47)
         Me.Button2.TabIndex = 36
         Me.Button2.Text = "Button2"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(495, 448)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(31, 13)
+        Me.Label8.TabIndex = 37
+        Me.Label8.Text = "Total"
+        '
+        'txttotal
+        '
+        Me.txttotal.Enabled = False
+        Me.txttotal.Location = New System.Drawing.Point(624, 438)
+        Me.txttotal.MaxLength = 327673
+        Me.txttotal.Name = "txttotal"
+        Me.txttotal.Size = New System.Drawing.Size(100, 20)
+        Me.txttotal.TabIndex = 38
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(664, 469)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 42)
+        Me.Button3.TabIndex = 39
+        Me.Button3.Text = "Button3"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'detalleventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(837, 523)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.txttotal)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label7)
@@ -277,4 +310,7 @@ Partial Class detalleventas
     Friend WithEvents Label7 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txttotal As TextBox
+    Friend WithEvents Button3 As Button
 End Class

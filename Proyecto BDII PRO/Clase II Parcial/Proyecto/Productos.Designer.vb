@@ -334,7 +334,7 @@ Partial Class Productos
         '
         Me.dgvModelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvModelos.Location = New System.Drawing.Point(431, 431)
-        Me.dgvModelos.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgvModelos.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvModelos.Name = "dgvModelos"
         Me.dgvModelos.RowHeadersWidth = 51
         Me.dgvModelos.RowTemplate.Height = 24

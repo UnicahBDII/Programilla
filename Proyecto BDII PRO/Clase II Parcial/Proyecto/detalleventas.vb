@@ -52,8 +52,8 @@
                     txtnombrecliente.Text = conexion.retornarventa(2)
                 Case 3
                     txt1.Text = conexion.retornarventa(3)
-                    'Case 4
-                    '    txtdocumento.Text = conexion.retornarventa(4)
+                Case 4
+                    txttotal.Text = conexion.retornarventa(4)
                     'Case 5
                     '    txtnumerodoc.Text = conexion.retornarventa(5)
 
@@ -125,6 +125,7 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         insertardetalle()
+        idnuevo()
     End Sub
 
     Private Sub consultardetalleactual()
@@ -164,6 +165,8 @@
                         MsgBox("Se elimino")
 
                         consultardetalleactual()
+                        idnuevo()
+                        consultarproductos()
                     End If
                 Catch ex As Exception
 
@@ -173,5 +176,42 @@
             Case Else
 
         End Select
+    End Sub
+
+    Private Sub DGListado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGListado.CellContentClick
+        Try
+
+            Dim DGlistados As DataGridViewRow = DGListado.Rows(e.RowIndex)
+            txtidproducto.Text = DGlistados.Cells(0).Value.ToString()
+            txtprecio.Text = DGlistados.Cells(5).Value.ToString()
+
+        Catch ex As Exception
+            MessageBox.Show("no se lleno por: " + ex.ToString)
+        End Try
+    End Sub
+
+    Private Sub consultarfactura()
+        Dim factura As String
+        Dim idventa As Integer
+        idventa = Val(txtidventa.Text)
+
+        factura = "dbo.vFactura where [Numero de factura] = " & idventa
+
+        Try
+            DataT = conexion.consulta(factura)
+            If DataT.Rows.Count <> 0 Then
+                DGListado.DataSource = DataT
+            Else
+                DGListado.DataSource = Nothing
+                MessageBox.Show("Error al consultar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Factura.Show()
+
     End Sub
 End Class
