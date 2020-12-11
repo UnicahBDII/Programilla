@@ -100,10 +100,6 @@
         End Try
     End Sub
 
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
     Private Sub actualizarproduct()
 
         Try
@@ -118,8 +114,6 @@
             cantidad = txtcantidad.Text
             caracteristicas = txtcaracteristica.Text
             modelo = txtmodelo.Text
-
-
 
             If conexion.actualizarProducto(id, nombre, preciocompra, precioventa, cantidad, caracteristicas) Then
 
@@ -165,4 +159,23 @@
         actualizarproduct()
 
     End Sub
+
+    Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+        limpiar()
+
+    End Sub
+
+    Private Sub limpiar()
+        idtxt.Clear()
+        txtcodbarra.Clear()
+        txttiproducto.Clear()
+        txtnombre.Clear()
+        txtpreciocompra.Clear()
+        txtventa.Clear()
+        txtcantidad.Clear()
+        txtestado.Clear()
+        txtmodelo.Clear()
+        txtcaracteristica.Clear()
+    End Sub
+
 End Class

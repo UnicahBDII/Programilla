@@ -130,6 +130,7 @@
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
         ingresarVentas()
+
     End Sub
 
     Private Sub actualizarVenta()
@@ -176,5 +177,21 @@
 
     Private Sub btnEditar_Click(sender As Object, e As EventArgs) Handles btnEditar.Click
         actualizarVenta()
+    End Sub
+
+    Private Sub Limpiar()
+        tctcodigo.Clear()
+        txxidcliente.Clear()
+        txtidemp.Clear()
+        txtfecha.Clear()
+        txtformapago.Clear()
+        txtfactura.Clear()
+        txttotal.Clear()
+
+    End Sub
+
+    Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+        Limpiar()
+
     End Sub
 End Class

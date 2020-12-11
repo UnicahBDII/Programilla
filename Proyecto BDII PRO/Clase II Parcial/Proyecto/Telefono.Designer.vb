@@ -56,11 +56,11 @@ Partial Class Telefono
         Me.GroupBox1.Controls.Add(Me.txtCodigo)
         Me.GroupBox1.Controls.Add(Me.btnBuscar)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Bebas Neue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(251, 287)
+        Me.GroupBox1.Size = New System.Drawing.Size(282, 287)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Identidad Solicitada"
@@ -70,7 +70,7 @@ Partial Class Telefono
         Me.btnEntregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnEntregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnEntregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEntregar.Font = New System.Drawing.Font("Bebas Neue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEntregar.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEntregar.Location = New System.Drawing.Point(39, 217)
         Me.btnEntregar.Name = "btnEntregar"
         Me.btnEntregar.Size = New System.Drawing.Size(157, 58)
@@ -81,77 +81,86 @@ Partial Class Telefono
         'txtPuesto
         '
         Me.txtPuesto.Enabled = False
-        Me.txtPuesto.Location = New System.Drawing.Point(75, 135)
+        Me.txtPuesto.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPuesto.Location = New System.Drawing.Point(96, 139)
         Me.txtPuesto.Name = "txtPuesto"
-        Me.txtPuesto.Size = New System.Drawing.Size(100, 28)
+        Me.txtPuesto.Size = New System.Drawing.Size(100, 26)
         Me.txtPuesto.TabIndex = 51
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(15, 176)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 21)
+        Me.Label2.Size = New System.Drawing.Size(69, 19)
         Me.Label2.TabIndex = 50
         Me.Label2.Text = "ID puesto"
         '
         'txtPrueba
         '
         Me.txtPrueba.Enabled = False
-        Me.txtPrueba.Location = New System.Drawing.Point(75, 169)
+        Me.txtPrueba.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPrueba.Location = New System.Drawing.Point(96, 173)
         Me.txtPrueba.Name = "txtPrueba"
-        Me.txtPrueba.Size = New System.Drawing.Size(121, 28)
+        Me.txtPrueba.Size = New System.Drawing.Size(121, 26)
         Me.txtPrueba.TabIndex = 47
         '
         'txtIdentidad
         '
         Me.txtIdentidad.Enabled = False
-        Me.txtIdentidad.Location = New System.Drawing.Point(75, 70)
+        Me.txtIdentidad.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIdentidad.Location = New System.Drawing.Point(96, 74)
         Me.txtIdentidad.Mask = "9999-9999-99999"
         Me.txtIdentidad.Name = "txtIdentidad"
-        Me.txtIdentidad.Size = New System.Drawing.Size(100, 28)
+        Me.txtIdentidad.Size = New System.Drawing.Size(100, 26)
         Me.txtIdentidad.TabIndex = 43
         '
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(13, 142)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 21)
+        Me.Label5.Size = New System.Drawing.Size(50, 19)
         Me.Label5.TabIndex = 48
         Me.Label5.Text = "Puesto"
         '
         'txtNombre
         '
         Me.txtNombre.Enabled = False
-        Me.txtNombre.Location = New System.Drawing.Point(75, 101)
+        Me.txtNombre.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(96, 105)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(157, 28)
+        Me.txtNombre.Size = New System.Drawing.Size(157, 26)
         Me.txtNombre.TabIndex = 46
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(13, 108)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(50, 21)
+        Me.Label3.Size = New System.Drawing.Size(60, 19)
         Me.Label3.TabIndex = 45
         Me.Label3.Text = "Nombre"
         '
         'txtId
         '
         Me.txtId.AutoSize = True
+        Me.txtId.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtId.Location = New System.Drawing.Point(15, 77)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(62, 21)
+        Me.txtId.Size = New System.Drawing.Size(66, 19)
         Me.txtId.TabIndex = 44
         Me.txtId.Text = "Identidad"
         '
         'txtCodigo
         '
-        Me.txtCodigo.Location = New System.Drawing.Point(75, 36)
+        Me.txtCodigo.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCodigo.Location = New System.Drawing.Point(96, 40)
         Me.txtCodigo.Name = "txtCodigo"
-        Me.txtCodigo.Size = New System.Drawing.Size(100, 28)
+        Me.txtCodigo.Size = New System.Drawing.Size(100, 26)
         Me.txtCodigo.TabIndex = 40
         '
         'btnBuscar
@@ -159,7 +168,7 @@ Partial Class Telefono
         Me.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnBuscar.Image = Global.Clase_II_Parcial.My.Resources.Resources.buscar
-        Me.btnBuscar.Location = New System.Drawing.Point(181, 36)
+        Me.btnBuscar.Location = New System.Drawing.Point(202, 40)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(51, 45)
         Me.btnBuscar.TabIndex = 39
@@ -168,20 +177,21 @@ Partial Class Telefono
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(13, 43)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 21)
+        Me.Label1.Size = New System.Drawing.Size(54, 19)
         Me.Label1.TabIndex = 16
         Me.Label1.Text = "Codigo"
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DGtelefono)
-        Me.GroupBox2.Font = New System.Drawing.Font("Bebas Neue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Location = New System.Drawing.Point(284, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(311, 26)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(574, 238)
+        Me.GroupBox2.Size = New System.Drawing.Size(574, 250)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Informacion de Ingreso"
@@ -189,7 +199,7 @@ Partial Class Telefono
         'DGtelefono
         '
         Me.DGtelefono.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGtelefono.Location = New System.Drawing.Point(16, 27)
+        Me.DGtelefono.Location = New System.Drawing.Point(16, 41)
         Me.DGtelefono.Name = "DGtelefono"
         Me.DGtelefono.Size = New System.Drawing.Size(540, 191)
         Me.DGtelefono.TabIndex = 3
@@ -200,7 +210,7 @@ Partial Class Telefono
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(875, 323)
+        Me.ClientSize = New System.Drawing.Size(897, 334)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

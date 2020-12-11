@@ -18,13 +18,51 @@
         End Try
     End Sub
 
+    Private Sub btnCerrar_Click_1(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        If MsgBox("Desea salir de la aplicacion?", vbQuestion + vbYesNo, "Salir") = vbYes Then
+            End
+        End If
 
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        AbrirFormulario(New EMPLEADOS)
     End Sub
 
-    Private Sub panelCentral_Paint(sender As Object, e As PaintEventArgs) Handles panelCentral.Paint
+    Private Sub btnMinimizar_Click_1(sender As Object, e As EventArgs) Handles btnMinimizar.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
 
+    Private Sub btnRestaurar_Click_1(sender As Object, e As EventArgs) Handles btnRestaurar.Click
+        btnRestaurar.Visible = False
+        btnMaximizar.Visible = True
+
+        Me.WindowState = FormWindowState.Normal
+    End Sub
+
+    Private Sub btnMaximizar_Click_1(sender As Object, e As EventArgs) Handles btnMaximizar.Click
+        btnMaximizar.Visible = False
+        btnRestaurar.Visible = True
+
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
+
+    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
+        AbrirFormulario(Productos)
+    End Sub
+
+    Private Sub btnVentas_Click(sender As Object, e As EventArgs) Handles btnVentas.Click
+        AbrirFormulario(Ventas)
+    End Sub
+
+    Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
+        If MsgBox("Desea salir de la aplicacion?", vbQuestion + vbYesNo, "Salir") = vbYes Then
+            End
+        End If
+    End Sub
+
+    Private Sub btnRealizarVenta_Click(sender As Object, e As EventArgs) Handles btnRealizarVenta.Click
+        AbrirFormulario(detalleventas)
+
+    End Sub
+
+    Private Sub MainPageUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnRestaurar.Visible = False
     End Sub
 End Class

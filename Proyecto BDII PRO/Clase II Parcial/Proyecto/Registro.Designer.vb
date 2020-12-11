@@ -53,7 +53,7 @@ Partial Class Registro
         Me.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSuperior.Location = New System.Drawing.Point(0, 0)
         Me.PanelSuperior.Name = "PanelSuperior"
-        Me.PanelSuperior.Size = New System.Drawing.Size(439, 32)
+        Me.PanelSuperior.Size = New System.Drawing.Size(459, 32)
         Me.PanelSuperior.TabIndex = 3
         '
         'btnMinimizar
@@ -65,7 +65,7 @@ Partial Class Registro
         Me.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimizar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_Minimizar
-        Me.btnMinimizar.Location = New System.Drawing.Point(373, 0)
+        Me.btnMinimizar.Location = New System.Drawing.Point(393, 0)
         Me.btnMinimizar.Name = "btnMinimizar"
         Me.btnMinimizar.Size = New System.Drawing.Size(30, 33)
         Me.btnMinimizar.TabIndex = 2
@@ -80,7 +80,7 @@ Partial Class Registro
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_cerrar_FN
-        Me.btnCerrar.Location = New System.Drawing.Point(409, 0)
+        Me.btnCerrar.Location = New System.Drawing.Point(429, 0)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(30, 33)
         Me.btnCerrar.TabIndex = 0
@@ -102,11 +102,11 @@ Partial Class Registro
         Me.GroupBox1.Controls.Add(Me.txtNombre)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 38)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(397, 326)
+        Me.GroupBox1.Size = New System.Drawing.Size(435, 344)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Formulario Para Nuevo Usuario"
@@ -114,7 +114,7 @@ Partial Class Registro
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA
-        Me.PictureBox1.Location = New System.Drawing.Point(286, 36)
+        Me.PictureBox1.Location = New System.Drawing.Point(333, 77)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(96, 98)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -124,16 +124,18 @@ Partial Class Registro
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(19, 222)
+        Me.CheckBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox1.Location = New System.Drawing.Point(79, 224)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(309, 24)
+        Me.CheckBox1.Size = New System.Drawing.Size(267, 23)
         Me.CheckBox1.TabIndex = 22
         Me.CheckBox1.Text = "Acepta nuestros terminos y condiciones"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(124, 70)
+        Me.TextBox1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(146, 70)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(156, 26)
         Me.TextBox1.TabIndex = 21
@@ -141,72 +143,81 @@ Partial Class Registro
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(15, 77)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 20)
+        Me.Label1.Size = New System.Drawing.Size(60, 19)
         Me.Label1.TabIndex = 20
         Me.Label1.Text = "Apellido"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(15, 179)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(102, 20)
+        Me.Label8.Size = New System.Drawing.Size(90, 19)
         Me.Label8.TabIndex = 19
         Me.Label8.Text = "Confirmacion"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(15, 145)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(92, 20)
+        Me.Label7.Size = New System.Drawing.Size(78, 19)
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Contraseña"
         '
         'btnRegresar
         '
-        Me.btnRegresar.Location = New System.Drawing.Point(221, 262)
+        Me.btnRegresar.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRegresar.Location = New System.Drawing.Point(298, 277)
         Me.btnRegresar.Name = "btnRegresar"
-        Me.btnRegresar.Size = New System.Drawing.Size(75, 43)
+        Me.btnRegresar.Size = New System.Drawing.Size(81, 43)
         Me.btnRegresar.TabIndex = 17
         Me.btnRegresar.Text = "Salir"
         Me.btnRegresar.UseVisualStyleBackColor = True
         '
         'btnCanjear
         '
-        Me.btnCanjear.Location = New System.Drawing.Point(124, 262)
+        Me.btnCanjear.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCanjear.Location = New System.Drawing.Point(177, 277)
         Me.btnCanjear.Name = "btnCanjear"
-        Me.btnCanjear.Size = New System.Drawing.Size(91, 43)
+        Me.btnCanjear.Size = New System.Drawing.Size(102, 43)
         Me.btnCanjear.TabIndex = 16
         Me.btnCanjear.Text = "Registrarse"
         Me.btnCanjear.UseVisualStyleBackColor = True
         '
         'txtMunicipio
         '
-        Me.txtMunicipio.Location = New System.Drawing.Point(124, 138)
+        Me.txtMunicipio.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMunicipio.Location = New System.Drawing.Point(146, 138)
         Me.txtMunicipio.Name = "txtMunicipio"
         Me.txtMunicipio.Size = New System.Drawing.Size(156, 26)
         Me.txtMunicipio.TabIndex = 15
         '
         'txtBarrio
         '
-        Me.txtBarrio.Location = New System.Drawing.Point(124, 172)
+        Me.txtBarrio.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBarrio.Location = New System.Drawing.Point(146, 172)
         Me.txtBarrio.Name = "txtBarrio"
         Me.txtBarrio.Size = New System.Drawing.Size(156, 26)
         Me.txtBarrio.TabIndex = 14
         '
         'txtDepartamento
         '
-        Me.txtDepartamento.Location = New System.Drawing.Point(124, 104)
+        Me.txtDepartamento.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtDepartamento.Location = New System.Drawing.Point(146, 104)
         Me.txtDepartamento.Name = "txtDepartamento"
         Me.txtDepartamento.Size = New System.Drawing.Size(156, 26)
         Me.txtDepartamento.TabIndex = 13
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(124, 36)
+        Me.txtNombre.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(146, 36)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(156, 26)
         Me.txtNombre.TabIndex = 9
@@ -214,18 +225,20 @@ Partial Class Registro
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(15, 113)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(146, 20)
+        Me.Label3.Size = New System.Drawing.Size(130, 19)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Nombre de Usuario"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(15, 43)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 20)
+        Me.Label2.Size = New System.Drawing.Size(60, 19)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Nombre"
         '
@@ -234,7 +247,7 @@ Partial Class Registro
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(439, 382)
+        Me.ClientSize = New System.Drawing.Size(459, 394)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PanelSuperior)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

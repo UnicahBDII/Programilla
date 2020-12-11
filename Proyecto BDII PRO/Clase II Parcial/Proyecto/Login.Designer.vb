@@ -51,11 +51,11 @@ Partial Class Login
         Me.GroupBox1.Controls.Add(Me.Panel1)
         Me.GroupBox1.Controls.Add(Me.btnIngresar)
         Me.GroupBox1.Controls.Add(Me.btnCancelar)
-        Me.GroupBox1.Font = New System.Drawing.Font("Bebas Neue", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GroupBox1.Location = New System.Drawing.Point(23, 38)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(388, 183)
+        Me.GroupBox1.Size = New System.Drawing.Size(396, 192)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Login"
@@ -67,12 +67,12 @@ Partial Class Login
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Location = New System.Drawing.Point(19, 80)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(332, 43)
+        Me.Panel2.Size = New System.Drawing.Size(354, 57)
         Me.Panel2.TabIndex = 5
         '
         'txtContraseña
         '
-        Me.txtContraseña.Location = New System.Drawing.Point(89, 9)
+        Me.txtContraseña.Location = New System.Drawing.Point(116, 12)
         Me.txtContraseña.Multiline = True
         Me.txtContraseña.Name = "txtContraseña"
         Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -83,9 +83,9 @@ Partial Class Login
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Label2.Location = New System.Drawing.Point(3, 9)
+        Me.Label2.Location = New System.Drawing.Point(16, 15)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(88, 25)
+        Me.Label2.Size = New System.Drawing.Size(94, 21)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Contraseña"
         '
@@ -94,14 +94,14 @@ Partial Class Login
         Me.Panel1.BackColor = System.Drawing.Color.Turquoise
         Me.Panel1.Controls.Add(Me.txtUsuario)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(19, 31)
+        Me.Panel1.Location = New System.Drawing.Point(19, 28)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(332, 43)
+        Me.Panel1.Size = New System.Drawing.Size(354, 50)
         Me.Panel1.TabIndex = 0
         '
         'txtUsuario
         '
-        Me.txtUsuario.Location = New System.Drawing.Point(89, 9)
+        Me.txtUsuario.Location = New System.Drawing.Point(116, 10)
         Me.txtUsuario.Multiline = True
         Me.txtUsuario.Name = "txtUsuario"
         Me.txtUsuario.Size = New System.Drawing.Size(223, 24)
@@ -111,9 +111,9 @@ Partial Class Login
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Label1.Location = New System.Drawing.Point(3, 10)
+        Me.Label1.Location = New System.Drawing.Point(27, 13)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(63, 25)
+        Me.Label1.Size = New System.Drawing.Size(68, 21)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Usuario"
         '
@@ -123,9 +123,9 @@ Partial Class Login
         Me.btnIngresar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CadetBlue
         Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnIngresar.Location = New System.Drawing.Point(19, 136)
+        Me.btnIngresar.Location = New System.Drawing.Point(77, 143)
         Me.btnIngresar.Name = "btnIngresar"
-        Me.btnIngresar.Size = New System.Drawing.Size(83, 35)
+        Me.btnIngresar.Size = New System.Drawing.Size(100, 34)
         Me.btnIngresar.TabIndex = 4
         Me.btnIngresar.Text = "Ingresar"
         Me.btnIngresar.UseVisualStyleBackColor = False
@@ -136,9 +136,9 @@ Partial Class Login
         Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CadetBlue
         Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancelar.Location = New System.Drawing.Point(108, 136)
+        Me.btnCancelar.Location = New System.Drawing.Point(206, 143)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(83, 35)
+        Me.btnCancelar.Size = New System.Drawing.Size(100, 34)
         Me.btnCancelar.TabIndex = 3
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = False
@@ -151,7 +151,7 @@ Partial Class Login
         Me.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSuperior.Location = New System.Drawing.Point(0, 0)
         Me.PanelSuperior.Name = "PanelSuperior"
-        Me.PanelSuperior.Size = New System.Drawing.Size(423, 32)
+        Me.PanelSuperior.Size = New System.Drawing.Size(444, 32)
         Me.PanelSuperior.TabIndex = 2
         '
         'btnMinimizar
@@ -163,7 +163,7 @@ Partial Class Login
         Me.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimizar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_Minimizar
-        Me.btnMinimizar.Location = New System.Drawing.Point(357, 0)
+        Me.btnMinimizar.Location = New System.Drawing.Point(378, 0)
         Me.btnMinimizar.Name = "btnMinimizar"
         Me.btnMinimizar.Size = New System.Drawing.Size(30, 33)
         Me.btnMinimizar.TabIndex = 2
@@ -178,7 +178,7 @@ Partial Class Login
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_cerrar_FN
-        Me.btnCerrar.Location = New System.Drawing.Point(393, 0)
+        Me.btnCerrar.Location = New System.Drawing.Point(414, 0)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(30, 33)
         Me.btnCerrar.TabIndex = 0
@@ -194,7 +194,7 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Clase_II_Parcial.My.Resources.Resources.depositphotos_198606870_stock_video_multicolored_motion_gradient_background
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(423, 249)
+        Me.ClientSize = New System.Drawing.Size(444, 255)
         Me.Controls.Add(Me.PanelSuperior)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None

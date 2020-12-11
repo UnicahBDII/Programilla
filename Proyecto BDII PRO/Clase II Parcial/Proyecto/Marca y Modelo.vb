@@ -180,7 +180,7 @@
     End Sub
 
     Private Sub btnLimpiarMarca_Click(sender As Object, e As EventArgs) Handles btnLimpiarMarca.Click
-
+        dgvMarca.Columns.Clear()
     End Sub
 
     Private Sub btnIngresarModelo_Click(sender As Object, e As EventArgs) Handles btnIngresarModelo.Click
@@ -196,6 +196,6 @@
     End Sub
 
     Private Sub btnLimpiarModelo_Click(sender As Object, e As EventArgs) Handles btnLimpiarModelo.Click
-
+        dgvModelo.Columns.Clear()
     End Sub
 End Class

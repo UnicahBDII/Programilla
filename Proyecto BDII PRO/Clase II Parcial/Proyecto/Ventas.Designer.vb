@@ -23,6 +23,17 @@ Partial Class Ventas
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtformapago = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtfecha = New System.Windows.Forms.MaskedTextBox()
+        Me.txttotal = New System.Windows.Forms.TextBox()
+        Me.txtfactura = New System.Windows.Forms.TextBox()
+        Me.txtidemp = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.tctcodigo = New System.Windows.Forms.TextBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
@@ -30,24 +41,13 @@ Partial Class Ventas
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.txxidcliente = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.DGListado = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.dgcliente = New System.Windows.Forms.DataGridView()
         Me.gbemp = New System.Windows.Forms.GroupBox()
         Me.dgemp = New System.Windows.Forms.DataGridView()
-        Me.txtidemp = New System.Windows.Forms.TextBox()
-        Me.txtfactura = New System.Windows.Forms.TextBox()
-        Me.txttotal = New System.Windows.Forms.TextBox()
-        Me.txtfecha = New System.Windows.Forms.MaskedTextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txtformapago = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,27 +77,131 @@ Partial Class Ventas
         Me.GroupBox1.Controls.Add(Me.btnIngresar)
         Me.GroupBox1.Controls.Add(Me.txxidcliente)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Controls.Add(Me.btnLimpiar)
+        Me.GroupBox1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(339, 295)
+        Me.GroupBox1.Size = New System.Drawing.Size(339, 318)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos de ventas"
         '
+        'txtformapago
+        '
+        Me.txtformapago.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtformapago.Location = New System.Drawing.Point(101, 164)
+        Me.txtformapago.Name = "txtformapago"
+        Me.txtformapago.Size = New System.Drawing.Size(151, 26)
+        Me.txtformapago.TabIndex = 55
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(8, 171)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(83, 19)
+        Me.Label8.TabIndex = 54
+        Me.Label8.Text = "Forma pago"
+        '
+        'txtfecha
+        '
+        Me.txtfecha.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtfecha.Location = New System.Drawing.Point(110, 135)
+        Me.txtfecha.Mask = "00/00/0000"
+        Me.txtfecha.Name = "txtfecha"
+        Me.txtfecha.Size = New System.Drawing.Size(100, 26)
+        Me.txtfecha.TabIndex = 53
+        Me.txtfecha.ValidatingType = GetType(Date)
+        '
+        'txttotal
+        '
+        Me.txttotal.Enabled = False
+        Me.txttotal.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txttotal.Location = New System.Drawing.Point(101, 229)
+        Me.txttotal.Name = "txttotal"
+        Me.txttotal.Size = New System.Drawing.Size(151, 26)
+        Me.txttotal.TabIndex = 52
+        Me.txttotal.Text = "0"
+        '
+        'txtfactura
+        '
+        Me.txtfactura.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtfactura.Location = New System.Drawing.Point(100, 197)
+        Me.txtfactura.Name = "txtfactura"
+        Me.txtfactura.Size = New System.Drawing.Size(151, 26)
+        Me.txtfactura.TabIndex = 51
+        '
+        'txtidemp
+        '
+        Me.txtidemp.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtidemp.Location = New System.Drawing.Point(101, 97)
+        Me.txtidemp.Name = "txtidemp"
+        Me.txtidemp.Size = New System.Drawing.Size(151, 26)
+        Me.txtidemp.TabIndex = 49
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(6, 233)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(39, 19)
+        Me.Label6.TabIndex = 48
+        Me.Label6.Text = "Total"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(6, 229)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(0, 24)
+        Me.Label5.TabIndex = 47
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(6, 204)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(79, 19)
+        Me.Label4.TabIndex = 46
+        Me.Label4.Text = "No.Factura"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(19, 138)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(46, 19)
+        Me.Label2.TabIndex = 45
+        Me.Label2.Text = "Fecha"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(6, 100)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(85, 19)
+        Me.Label1.TabIndex = 44
+        Me.Label1.Text = "Id empleado"
+        '
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(19, 31)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(66, 20)
+        Me.Label7.Size = New System.Drawing.Size(58, 19)
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Id venta"
         '
         'tctcodigo
         '
+        Me.tctcodigo.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tctcodigo.Location = New System.Drawing.Point(101, 24)
         Me.tctcodigo.Name = "tctcodigo"
         Me.tctcodigo.Size = New System.Drawing.Size(121, 26)
@@ -138,6 +242,7 @@ Partial Class Ventas
         '
         'txxidcliente
         '
+        Me.txxidcliente.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txxidcliente.Location = New System.Drawing.Point(101, 58)
         Me.txxidcliente.Name = "txxidcliente"
         Me.txxidcliente.Size = New System.Drawing.Size(151, 26)
@@ -146,31 +251,32 @@ Partial Class Ventas
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(19, 65)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 20)
+        Me.Label3.Size = New System.Drawing.Size(64, 19)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Id cliente"
         '
-        'Button1
+        'btnLimpiar
         '
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
-        Me.Button1.Image = Global.Clase_II_Parcial.My.Resources.Resources.limpiar
-        Me.Button1.Location = New System.Drawing.Point(270, 177)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(51, 45)
-        Me.Button1.TabIndex = 3
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
+        Me.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnLimpiar.Image = Global.Clase_II_Parcial.My.Resources.Resources.limpiar
+        Me.btnLimpiar.Location = New System.Drawing.Point(270, 177)
+        Me.btnLimpiar.Name = "btnLimpiar"
+        Me.btnLimpiar.Size = New System.Drawing.Size(51, 45)
+        Me.btnLimpiar.TabIndex = 3
+        Me.btnLimpiar.UseVisualStyleBackColor = True
         '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.DGListado)
-        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox2.Location = New System.Drawing.Point(357, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(589, 307)
+        Me.GroupBox2.Size = New System.Drawing.Size(655, 318)
         Me.GroupBox2.TabIndex = 7
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Ventas"
@@ -179,63 +285,19 @@ Partial Class Ventas
         '
         Me.DGListado.AllowUserToAddRows = False
         Me.DGListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGListado.Location = New System.Drawing.Point(6, 24)
+        Me.DGListado.Location = New System.Drawing.Point(55, 31)
         Me.DGListado.Name = "DGListado"
         Me.DGListado.Size = New System.Drawing.Size(577, 271)
         Me.DGListado.TabIndex = 18
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(6, 100)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 20)
-        Me.Label1.TabIndex = 44
-        Me.Label1.Text = "Id empleado"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 138)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 20)
-        Me.Label2.TabIndex = 45
-        Me.Label2.Text = "fecha"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(4, 200)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(88, 20)
-        Me.Label4.TabIndex = 46
-        Me.Label4.Text = "No.Factura"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 229)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 20)
-        Me.Label5.TabIndex = 47
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(4, 229)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 20)
-        Me.Label6.TabIndex = 48
-        Me.Label6.Text = "Total"
-        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.dgcliente)
-        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox3.Location = New System.Drawing.Point(20, 336)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(366, 204)
+        Me.GroupBox3.Size = New System.Drawing.Size(404, 216)
         Me.GroupBox3.TabIndex = 19
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Info cliente"
@@ -244,7 +306,7 @@ Partial Class Ventas
         '
         Me.dgcliente.AllowUserToAddRows = False
         Me.dgcliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgcliente.Location = New System.Drawing.Point(12, 24)
+        Me.dgcliente.Location = New System.Drawing.Point(35, 39)
         Me.dgcliente.Name = "dgcliente"
         Me.dgcliente.Size = New System.Drawing.Size(354, 171)
         Me.dgcliente.TabIndex = 18
@@ -252,11 +314,11 @@ Partial Class Ventas
         'gbemp
         '
         Me.gbemp.Controls.Add(Me.dgemp)
-        Me.gbemp.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gbemp.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbemp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.gbemp.Location = New System.Drawing.Point(476, 336)
+        Me.gbemp.Location = New System.Drawing.Point(453, 336)
         Me.gbemp.Name = "gbemp"
-        Me.gbemp.Size = New System.Drawing.Size(366, 204)
+        Me.gbemp.Size = New System.Drawing.Size(536, 216)
         Me.gbemp.TabIndex = 20
         Me.gbemp.TabStop = False
         Me.gbemp.Text = "Info empleado"
@@ -265,58 +327,10 @@ Partial Class Ventas
         '
         Me.dgemp.AllowUserToAddRows = False
         Me.dgemp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgemp.Location = New System.Drawing.Point(12, 24)
+        Me.dgemp.Location = New System.Drawing.Point(87, 25)
         Me.dgemp.Name = "dgemp"
-        Me.dgemp.Size = New System.Drawing.Size(354, 171)
+        Me.dgemp.Size = New System.Drawing.Size(426, 180)
         Me.dgemp.TabIndex = 18
-        '
-        'txtidemp
-        '
-        Me.txtidemp.Location = New System.Drawing.Point(101, 97)
-        Me.txtidemp.Name = "txtidemp"
-        Me.txtidemp.Size = New System.Drawing.Size(151, 26)
-        Me.txtidemp.TabIndex = 49
-        '
-        'txtfactura
-        '
-        Me.txtfactura.Location = New System.Drawing.Point(100, 197)
-        Me.txtfactura.Name = "txtfactura"
-        Me.txtfactura.Size = New System.Drawing.Size(151, 26)
-        Me.txtfactura.TabIndex = 51
-        '
-        'txttotal
-        '
-        Me.txttotal.Enabled = False
-        Me.txttotal.Location = New System.Drawing.Point(101, 229)
-        Me.txttotal.Name = "txttotal"
-        Me.txttotal.Size = New System.Drawing.Size(151, 26)
-        Me.txttotal.TabIndex = 52
-        Me.txttotal.Text = "0"
-        '
-        'txtfecha
-        '
-        Me.txtfecha.Location = New System.Drawing.Point(110, 135)
-        Me.txtfecha.Mask = "00/00/0000"
-        Me.txtfecha.Name = "txtfecha"
-        Me.txtfecha.Size = New System.Drawing.Size(100, 26)
-        Me.txtfecha.TabIndex = 53
-        Me.txtfecha.ValidatingType = GetType(Date)
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(6, 167)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(95, 20)
-        Me.Label8.TabIndex = 54
-        Me.Label8.Text = "Forma pago"
-        '
-        'txtformapago
-        '
-        Me.txtformapago.Location = New System.Drawing.Point(101, 164)
-        Me.txtformapago.Name = "txtformapago"
-        Me.txtformapago.Size = New System.Drawing.Size(151, 26)
-        Me.txtformapago.TabIndex = 55
         '
         'Ventas
         '
@@ -351,7 +365,7 @@ Partial Class Ventas
     Friend WithEvents btnIngresar As Button
     Friend WithEvents txxidcliente As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnLimpiar As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DGListado As DataGridView
     Friend WithEvents txttotal As TextBox

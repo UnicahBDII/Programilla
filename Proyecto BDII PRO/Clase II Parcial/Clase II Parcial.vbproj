@@ -476,6 +476,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Proyecto\version 5.0 dela 7 y 27pm.sql" />
+    <None Include="Resources\icons8_today_32.png" />
+    <None Include="Resources\icons8_sale_price_tag_321.png" />
+    <None Include="Resources\icons8_product_321.png" />
+    <None Include="Resources\icons8_delete_321.png" />
+    <None Include="Resources\icons8_delete_32.png" />
+    <None Include="Resources\icons8_user_groups_32.png" />
+    <None Include="Resources\icons8_resume_32.png" />
+    <None Include="Resources\icons8_product_32.png" />
+    <None Include="Resources\icons8_product_48.png" />
+    <None Include="Resources\icons8_sale_price_tag_32.png" />
+    <None Include="Resources\icons8_sale_price_tag_48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

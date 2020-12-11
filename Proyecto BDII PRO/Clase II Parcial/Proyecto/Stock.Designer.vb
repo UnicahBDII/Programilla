@@ -33,11 +33,11 @@ Partial Class Stock
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.DGstock)
-        Me.GroupBox1.Font = New System.Drawing.Font("Bebas Neue", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(869, 266)
+        Me.GroupBox1.Size = New System.Drawing.Size(914, 289)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Telefonos Registrados"
@@ -45,7 +45,7 @@ Partial Class Stock
         'DGstock
         '
         Me.DGstock.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGstock.Location = New System.Drawing.Point(6, 27)
+        Me.DGstock.Location = New System.Drawing.Point(35, 45)
         Me.DGstock.Name = "DGstock"
         Me.DGstock.Size = New System.Drawing.Size(852, 225)
         Me.DGstock.TabIndex = 1
@@ -56,7 +56,7 @@ Partial Class Stock
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(905, 313)
+        Me.ClientSize = New System.Drawing.Size(938, 313)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Stock"

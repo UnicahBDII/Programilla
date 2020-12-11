@@ -28,21 +28,21 @@ Public Class MainPage
     Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
 
-    Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
+    Private Sub btnCerrar_Click(sender As Object, e As EventArgs)
         End
     End Sub
 
-    Private Sub btnRestaurar_Click(sender As Object, e As EventArgs) Handles btnRestaurar.Click
+    Private Sub btnRestaurar_Click(sender As Object, e As EventArgs)
         btnRestaurar.Visible = False
         btnMaximizar.Visible = True
         Me.WindowState = FormWindowState.Normal
     End Sub
 
-    Private Sub btnMinimizar_Click(sender As Object, e As EventArgs) Handles btnMinimizar.Click
+    Private Sub btnMinimizar_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub btnMaximizar_Click(sender As Object, e As EventArgs) Handles btnMaximizar.Click
+    Private Sub btnMaximizar_Click(sender As Object, e As EventArgs)
         btnMaximizar.Visible = False
         btnRestaurar.Visible = True
         Me.WindowState = FormWindowState.Maximized
@@ -54,55 +54,63 @@ Public Class MainPage
     End Sub
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-
         If MsgBox("Desea salir de la aplicacion?", vbQuestion + vbYesNo, "Salir") = vbYes Then
             End
         End If
     End Sub
 
-    Private Sub btnAsignacionTelefonos_Click(sender As Object, e As EventArgs)
-        AbrirFormulario(New Telefono)
-    End Sub
-
-    Private Sub panelCentral_Paint(sender As Object, e As PaintEventArgs)
-
-    End Sub
-
     Private Sub btnEmpleados_Click(sender As Object, e As EventArgs) Handles btnEmpleados.Click
-        AbrirFormulario(New EMPLEADOS)
-    End Sub
-
-    Private Sub btnStock_Click(sender As Object, e As EventArgs) Handles btnStock.Click
-        AbrirFormulario(New UsuarioAdministracion)
-    End Sub
-
-    Private Sub PanelSuperior_Paint(sender As Object, e As PaintEventArgs) Handles PanelSuperior.Paint
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-
-    End Sub
-
-    Private Sub panelCentral_Paint_1(sender As Object, e As PaintEventArgs)
+        AbrirFormulario(EMPLEADOS)
 
     End Sub
 
     Private Sub MainPage_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-        'conexion.conectar()
+        btnRestaurar.Visible = False
     End Sub
+
+    Private Sub btnCerrar_Click_1(sender As Object, e As EventArgs) Handles btnCerrar.Click
+        If MsgBox("Desea salir de la aplicacion?", vbQuestion + vbYesNo, "Salir") = vbYes Then
+            End
+        End If
+    End Sub
+
+    Private Sub btnMinimizar_Click_1(sender As Object, e As EventArgs) Handles btnMinimizar.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub btnRestaurar_Click_1(sender As Object, e As EventArgs) Handles btnRestaurar.Click
+        btnRestaurar.Visible = False
+        btnMaximizar.Visible = True
+
+        Me.WindowState = FormWindowState.Normal
+    End Sub
+
+    Private Sub btnMaximizar_Click_1(sender As Object, e As EventArgs) Handles btnMaximizar.Click
+        btnMaximizar.Visible = False
+        btnRestaurar.Visible = True
+
+        Me.WindowState = FormWindowState.Maximized
+    End Sub
+
+    Private Sub btnProductos_Click(sender As Object, e As EventArgs) Handles btnProductos.Click
+        AbrirFormulario(Productos)
+
+    End Sub
+
+    Private Sub btnCompras_Click(sender As Object, e As EventArgs) Handles btnCompras.Click
+        AbrirFormulario(Compras)
+
+    End Sub
+
+    Private Sub btnVentas_Click(sender As Object, e As EventArgs) Handles btnVentas.Click
+        AbrirFormulario(Ventas)
+
+    End Sub
+
+    Private Sub btnUsuarios_Click(sender As Object, e As EventArgs) Handles btnUsuarios.Click
+        AbrirFormulario(UsuarioAdministracion)
+    End Sub
+
 End Class
 
 

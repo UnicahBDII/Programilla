@@ -12,13 +12,15 @@ Public Class EMPLEADOS
     Private Sub limpiar()
         txtCodigo.Clear()
         txtIdentidad.Clear()
-
         txtBarrio.Clear()
         cmbPuesto.SelectedIndex = -1
         txtNombre.Clear()
         txtEdad.Clear()
         txtidpuesto.Clear()
         conexion.conexion.Close()
+        cmbSexo.SelectedIndex = -1
+        txtestado.Clear()
+
     End Sub
 
 
