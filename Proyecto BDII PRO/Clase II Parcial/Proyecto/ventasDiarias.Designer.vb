@@ -65,8 +65,11 @@ Partial Class ventasDiarias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(779, 498)
         Me.Controls.Add(Me.GroupBox2)
+        Me.Cursor = System.Windows.Forms.Cursors.Default
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "ventasDiarias"
         Me.Text = "ventasDiarias"

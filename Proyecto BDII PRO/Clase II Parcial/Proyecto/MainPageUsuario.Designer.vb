@@ -121,7 +121,7 @@ Partial Class MainPageUsuario
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.BackgroundImage = Global.Clase_II_Parcial.My.Resources.Resources._96fa72f23263060b83a37cc084d34d85
+        Me.Panel1.BackgroundImage = Global.Clase_II_Parcial.My.Resources.Resources._96fa72f23263060b83a37cc084d34d851
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.btnCompras)
@@ -260,7 +260,7 @@ Partial Class MainPageUsuario
         '
         'panelCentral
         '
-        Me.panelCentral.BackColor = System.Drawing.SystemColors.Window
+        Me.panelCentral.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.panelCentral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelCentral.Location = New System.Drawing.Point(219, 35)

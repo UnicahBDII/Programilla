@@ -34,12 +34,12 @@ Partial Class TelefonosEmpleados
         Me.dgvMarca = New System.Windows.Forms.DataGridView()
         Me.dgvTipoPaquete = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         CType(Me.dgvTelefonosEmpleados, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvMarca, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvTipoPaquete, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,25 +51,33 @@ Partial Class TelefonosEmpleados
         '
         'btnIngresar
         '
-        Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnIngresar.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnIngresar.FlatAppearance.BorderSize = 2
+        Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIngresar.Image = Global.Clase_II_Parcial.My.Resources.Resources.editar1
         Me.btnIngresar.Location = New System.Drawing.Point(247, 24)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(51, 45)
         Me.btnIngresar.TabIndex = 37
-        Me.btnIngresar.UseVisualStyleBackColor = True
+        Me.btnIngresar.UseVisualStyleBackColor = False
         '
         'btnEditar
         '
-        Me.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnEditar.FlatAppearance.BorderSize = 2
+        Me.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditar.Image = Global.Clase_II_Parcial.My.Resources.Resources.copiar
         Me.btnEditar.Location = New System.Drawing.Point(247, 75)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(51, 45)
         Me.btnEditar.TabIndex = 38
-        Me.btnEditar.UseVisualStyleBackColor = True
+        Me.btnEditar.UseVisualStyleBackColor = False
         '
         'txtTelefono
         '
@@ -175,6 +183,17 @@ Partial Class TelefonosEmpleados
         Me.GroupBox1.TabIndex = 48
         Me.GroupBox1.TabStop = False
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(3, -3)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(61, 24)
+        Me.Label5.TabIndex = 52
+        Me.Label5.Text = "Marca"
+        '
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.Label4)
@@ -186,6 +205,17 @@ Partial Class TelefonosEmpleados
         Me.GroupBox2.TabIndex = 49
         Me.GroupBox2.TabStop = False
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(5, 0)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(156, 24)
+        Me.Label4.TabIndex = 45
+        Me.Label4.Text = "Telefono Asignado"
+        '
         'GroupBox3
         '
         Me.GroupBox3.Controls.Add(Me.Label6)
@@ -196,6 +226,17 @@ Partial Class TelefonosEmpleados
         Me.GroupBox3.Size = New System.Drawing.Size(329, 167)
         Me.GroupBox3.TabIndex = 50
         Me.GroupBox3.TabStop = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(5, -3)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(136, 24)
+        Me.Label6.TabIndex = 52
+        Me.Label6.Text = "Tipo de paquete"
         '
         'GroupBox4
         '
@@ -214,43 +255,11 @@ Partial Class TelefonosEmpleados
         Me.GroupBox4.TabIndex = 51
         Me.GroupBox4.TabStop = False
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(5, 0)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(156, 24)
-        Me.Label4.TabIndex = 45
-        Me.Label4.Text = "Telefono Asignado"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(3, -3)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(61, 24)
-        Me.Label5.TabIndex = 52
-        Me.Label5.Text = "Marca"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(5, -3)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(136, 24)
-        Me.Label6.TabIndex = 52
-        Me.Label6.Text = "Tipo de paquete"
-        '
         'TelefonosEmpleados
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(706, 369)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox3)

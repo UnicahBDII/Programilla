@@ -347,7 +347,7 @@ Partial Class MainPage
         '
         'panelCentral
         '
-        Me.panelCentral.BackColor = System.Drawing.SystemColors.Window
+        Me.panelCentral.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.panelCentral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelCentral.Location = New System.Drawing.Point(220, 36)

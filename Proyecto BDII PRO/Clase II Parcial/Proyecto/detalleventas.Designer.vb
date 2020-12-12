@@ -24,8 +24,10 @@ Partial Class detalleventas
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(detalleventas))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.DGListado = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.dgcarrito = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -47,8 +49,6 @@ Partial Class detalleventas
         Me.txttotal = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -68,6 +68,16 @@ Partial Class detalleventas
         Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Seleccionar productos"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(6, 0)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(194, 24)
+        Me.Label10.TabIndex = 30
+        Me.Label10.Text = "Seleccion de productos"
         '
         'DGListado
         '
@@ -89,6 +99,16 @@ Partial Class detalleventas
         Me.GroupBox1.Size = New System.Drawing.Size(299, 313)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(6, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(186, 24)
+        Me.Label9.TabIndex = 29
+        Me.Label9.Text = "Listado de lo que lleva"
         '
         'dgcarrito
         '
@@ -227,21 +247,33 @@ Partial Class detalleventas
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button1.FlatAppearance.BorderSize = 2
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button1.Location = New System.Drawing.Point(715, 317)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(67, 44)
         Me.Button1.TabIndex = 35
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button2.FlatAppearance.BorderSize = 2
+        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
         Me.Button2.Location = New System.Drawing.Point(715, 367)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(67, 44)
         Me.Button2.TabIndex = 36
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Label8
         '
@@ -265,13 +297,19 @@ Partial Class detalleventas
         '
         'Button3
         '
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.Button3.FlatAppearance.BorderSize = 2
+        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(684, 417)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(131, 44)
         Me.Button3.TabIndex = 39
         Me.Button3.Text = "Realizar"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.UseVisualStyleBackColor = False
         '
         'GroupBox3
         '
@@ -292,30 +330,11 @@ Partial Class detalleventas
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Seleccionar productos"
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(6, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(186, 24)
-        Me.Label9.TabIndex = 29
-        Me.Label9.Text = "Listado de lo que lleva"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(6, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(194, 24)
-        Me.Label10.TabIndex = 30
-        Me.Label10.Text = "Seleccion de productos"
-        '
         'detalleventas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(867, 523)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.Button3)

@@ -251,25 +251,33 @@ Partial Class Productos
         '
         'btnEditar
         '
-        Me.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnEditar.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnEditar.FlatAppearance.BorderSize = 2
+        Me.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEditar.Image = Global.Clase_II_Parcial.My.Resources.Resources.copiar
         Me.btnEditar.Location = New System.Drawing.Point(270, 75)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(51, 45)
         Me.btnEditar.TabIndex = 37
-        Me.btnEditar.UseVisualStyleBackColor = True
+        Me.btnEditar.UseVisualStyleBackColor = False
         '
         'btnIngresar
         '
-        Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnIngresar.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnIngresar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnIngresar.FlatAppearance.BorderSize = 2
+        Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIngresar.Image = Global.Clase_II_Parcial.My.Resources.Resources.editar1
         Me.btnIngresar.Location = New System.Drawing.Point(270, 24)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(51, 45)
         Me.btnIngresar.TabIndex = 36
-        Me.btnIngresar.UseVisualStyleBackColor = True
+        Me.btnIngresar.UseVisualStyleBackColor = False
         '
         'Label9
         '
@@ -331,25 +339,33 @@ Partial Class Productos
         '
         'btnLimpiar
         '
-        Me.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnLimpiar.FlatAppearance.BorderSize = 2
+        Me.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLimpiar.Image = Global.Clase_II_Parcial.My.Resources.Resources.limpiar
         Me.btnLimpiar.Location = New System.Drawing.Point(270, 177)
         Me.btnLimpiar.Name = "btnLimpiar"
         Me.btnLimpiar.Size = New System.Drawing.Size(51, 45)
         Me.btnLimpiar.TabIndex = 3
-        Me.btnLimpiar.UseVisualStyleBackColor = True
+        Me.btnLimpiar.UseVisualStyleBackColor = False
         '
         'btnEliminar
         '
-        Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Black
+        Me.btnEliminar.FlatAppearance.BorderSize = 2
+        Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(171, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(201, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(253, Byte), Integer))
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEliminar.Image = Global.Clase_II_Parcial.My.Resources.Resources.eliminar
         Me.btnEliminar.Location = New System.Drawing.Point(270, 126)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(51, 45)
         Me.btnEliminar.TabIndex = 2
-        Me.btnEliminar.UseVisualStyleBackColor = True
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'dgvModelos
         '
@@ -387,7 +403,7 @@ Partial Class Productos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Window
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(223, Byte), Integer), CType(CType(226, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(931, 547)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
