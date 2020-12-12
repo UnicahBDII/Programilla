@@ -98,4 +98,7 @@
             End Try
     End Sub
 
+    Private Sub dgvTelefonosEmpleados_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvTelefonosEmpleados.CellContentClick
+
+    End Sub
 End Class

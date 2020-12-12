@@ -159,6 +159,12 @@
     <Compile Include="Proyecto\Registro.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Proyecto\RegistroCompleto.Designer.vb">
+      <DependentUpon>RegistroCompleto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\RegistroCompleto.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Proyecto\Stock.Designer.vb">
       <DependentUpon>Stock.vb</DependentUpon>
     </Compile>
@@ -205,6 +211,12 @@
       <DependentUpon>Ventas.vb</DependentUpon>
     </Compile>
     <Compile Include="Proyecto\Ventas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyecto\ventasDiarias.Designer.vb">
+      <DependentUpon>ventasDiarias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proyecto\ventasDiarias.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tareas\EntregaBolsaSolidaria.Designer.vb">
@@ -276,6 +288,9 @@
     <EmbeddedResource Include="Proyecto\Registro.resx">
       <DependentUpon>Registro.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\RegistroCompleto.resx">
+      <DependentUpon>RegistroCompleto.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\Stock.resx">
       <DependentUpon>Stock.vb</DependentUpon>
     </EmbeddedResource>
@@ -299,6 +314,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Proyecto\Ventas.resx">
       <DependentUpon>Ventas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proyecto\ventasDiarias.resx">
+      <DependentUpon>ventasDiarias.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tareas\EntregaBolsaSolidaria.resx">
       <DependentUpon>EntregaBolsaSolidaria.vb</DependentUpon>
@@ -476,6 +494,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Proyecto\version 5.0 dela 7 y 27pm.sql" />
+    <None Include="Resources\icons8_medal_first_place_64.png" />
+    <None Include="Resources\icons8_medal_first_place_48.png" />
+    <None Include="Resources\icons8_calendar_64.png" />
+    <None Include="Resources\calendar_26px.png" />
+    <None Include="Resources\calendario.png" />
+    <None Include="Resources\tableta.png" />
+    <None Include="Resources\aa.png" />
+    <None Include="Resources\a.png" />
+    <None Include="Resources\sgdzg.png" />
+    <None Include="Resources\llamada-telefonica.png" />
     <None Include="Resources\icons8_today_32.png" />
     <None Include="Resources\icons8_sale_price_tag_321.png" />
     <None Include="Resources\icons8_product_321.png" />

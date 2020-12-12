@@ -97,7 +97,7 @@ Public Class MainPage
 
     End Sub
 
-    Private Sub btnCompras_Click(sender As Object, e As EventArgs) Handles btnCompras.Click
+    Private Sub btnCompras_Click(sender As Object, e As EventArgs) 
         AbrirFormulario(Compras)
 
     End Sub
@@ -111,6 +111,13 @@ Public Class MainPage
         AbrirFormulario(UsuarioAdministracion)
     End Sub
 
+    Private Sub txtTelefono_Click(sender As Object, e As EventArgs) Handles txtTelefono.Click
+        AbrirFormulario(TelefonosEmpleados)
+    End Sub
+
+    Private Sub txtRegistro_Click(sender As Object, e As EventArgs) Handles txtRegistro.Click
+        AbrirFormulario(RegistroCompleto)
+    End Sub
 End Class
 
 

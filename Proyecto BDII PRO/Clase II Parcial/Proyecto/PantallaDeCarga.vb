@@ -5,7 +5,7 @@
         Else
             Timer1.Enabled = False
             Me.Hide()
-            MainPage.Show()
+            Login.Show()
         End If
     End Sub
 

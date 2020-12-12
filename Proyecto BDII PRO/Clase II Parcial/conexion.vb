@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class conexion
 
-    Public conexion As SqlConnection = New SqlConnection("Data Source=DESKTOP-LGDBE5Q\SQLEXPRESS;Initial Catalog=CompuCenter;Integrated Security=True")
+    Public conexion As SqlConnection = New SqlConnection("Data Source=localhost\SQLEXPRESS;Initial Catalog=CompuCenter;Integrated Security=True")
     Public ds As DataSet = New DataSet()
     Public da As SqlDataAdapter
     Public lectura As SqlDataReader
@@ -27,6 +27,24 @@ Public Class conexion
         Try
             conexion.Open()
             adaptador = New SqlDataAdapter("Select * from " & nombretabla, conexion)
+            Dim dt As New DataTable
+            adaptador.Fill(dt)
+            Return dt
+            conexion.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return Nothing
+        Finally
+            conexion.Close()
+        End Try
+
+    End Function
+
+    Public Function consultaProcediminetos(nombretabla As String)
+        Try
+            conexion.Open()
+            adaptador = New SqlDataAdapter("execute " & nombretabla, conexion)
             Dim dt As New DataTable
             adaptador.Fill(dt)
             Return dt

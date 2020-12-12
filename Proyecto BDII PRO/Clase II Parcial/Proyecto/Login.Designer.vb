@@ -24,20 +24,20 @@ Partial Class Login
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.txtContraseña = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.btnCancelar = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.txtUsuario = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnIngresar = New System.Windows.Forms.Button()
-        Me.btnCancelar = New System.Windows.Forms.Button()
         Me.PanelSuperior = New System.Windows.Forms.Panel()
         Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.ErrorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -50,10 +50,10 @@ Partial Class Login
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Panel2)
+        Me.GroupBox1.Controls.Add(Me.btnCancelar)
         Me.GroupBox1.Controls.Add(Me.Panel1)
         Me.GroupBox1.Controls.Add(Me.btnIngresar)
-        Me.GroupBox1.Controls.Add(Me.btnCancelar)
-        Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Fugaz One", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GroupBox1.Location = New System.Drawing.Point(23, 38)
         Me.GroupBox1.Name = "GroupBox1"
@@ -61,6 +61,14 @@ Partial Class Login
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Login"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(309, 148)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 35)
+        Me.TextBox1.TabIndex = 6
+        Me.TextBox1.Visible = False
         '
         'Panel2
         '
@@ -74,22 +82,37 @@ Partial Class Login
         '
         'txtContraseña
         '
-        Me.txtContraseña.Location = New System.Drawing.Point(116, 12)
+        Me.txtContraseña.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtContraseña.Location = New System.Drawing.Point(116, 14)
         Me.txtContraseña.Multiline = True
         Me.txtContraseña.Name = "txtContraseña"
         Me.txtContraseña.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtContraseña.Size = New System.Drawing.Size(223, 24)
+        Me.txtContraseña.Size = New System.Drawing.Size(223, 31)
         Me.txtContraseña.TabIndex = 1
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Label2.Location = New System.Drawing.Point(16, 15)
+        Me.Label2.Location = New System.Drawing.Point(3, 14)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(94, 21)
+        Me.Label2.Size = New System.Drawing.Size(110, 22)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Contraseña"
+        '
+        'btnCancelar
+        '
+        Me.btnCancelar.BackColor = System.Drawing.Color.DarkTurquoise
+        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CadetBlue
+        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCancelar.Location = New System.Drawing.Point(194, 143)
+        Me.btnCancelar.Name = "btnCancelar"
+        Me.btnCancelar.Size = New System.Drawing.Size(111, 34)
+        Me.btnCancelar.TabIndex = 3
+        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -103,19 +126,21 @@ Partial Class Login
         '
         'txtUsuario
         '
+        Me.txtUsuario.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsuario.Location = New System.Drawing.Point(116, 10)
         Me.txtUsuario.Multiline = True
         Me.txtUsuario.Name = "txtUsuario"
-        Me.txtUsuario.Size = New System.Drawing.Size(223, 24)
+        Me.txtUsuario.Size = New System.Drawing.Size(223, 31)
         Me.txtUsuario.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.Label1.Location = New System.Drawing.Point(27, 13)
+        Me.Label1.Location = New System.Drawing.Point(16, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(68, 21)
+        Me.Label1.Size = New System.Drawing.Size(80, 22)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Usuario"
         '
@@ -127,23 +152,10 @@ Partial Class Login
         Me.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnIngresar.Location = New System.Drawing.Point(77, 143)
         Me.btnIngresar.Name = "btnIngresar"
-        Me.btnIngresar.Size = New System.Drawing.Size(100, 34)
+        Me.btnIngresar.Size = New System.Drawing.Size(111, 34)
         Me.btnIngresar.TabIndex = 4
         Me.btnIngresar.Text = "Ingresar"
         Me.btnIngresar.UseVisualStyleBackColor = False
-        '
-        'btnCancelar
-        '
-        Me.btnCancelar.BackColor = System.Drawing.Color.DarkTurquoise
-        Me.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCancelar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.CadetBlue
-        Me.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancelar.Location = New System.Drawing.Point(206, 143)
-        Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(100, 34)
-        Me.btnCancelar.TabIndex = 3
-        Me.btnCancelar.Text = "Cancelar"
-        Me.btnCancelar.UseVisualStyleBackColor = False
         '
         'PanelSuperior
         '
@@ -189,13 +201,6 @@ Partial Class Login
         'ErrorValidacion
         '
         Me.ErrorValidacion.ContainerControl = Me
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(309, 148)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 29)
-        Me.TextBox1.TabIndex = 6
         '
         'Login
         '

@@ -28,9 +28,8 @@ Partial Class MainPageUsuario
         Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.btnMaximizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
-        Me.panelCentral = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnRealizarVenta = New System.Windows.Forms.Button()
+        Me.btnCompras = New System.Windows.Forms.Button()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnVentas = New System.Windows.Forms.Button()
@@ -40,6 +39,7 @@ Partial Class MainPageUsuario
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.panelCentral = New System.Windows.Forms.Panel()
         Me.PanelSuperior.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,7 +55,7 @@ Partial Class MainPageUsuario
         Me.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSuperior.Location = New System.Drawing.Point(0, 0)
         Me.PanelSuperior.Name = "PanelSuperior"
-        Me.PanelSuperior.Size = New System.Drawing.Size(1160, 35)
+        Me.PanelSuperior.Size = New System.Drawing.Size(1253, 35)
         Me.PanelSuperior.TabIndex = 2
         '
         'btnRestaurar
@@ -67,7 +67,7 @@ Partial Class MainPageUsuario
         Me.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRestaurar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_Restaurar
-        Me.btnRestaurar.Location = New System.Drawing.Point(1087, 4)
+        Me.btnRestaurar.Location = New System.Drawing.Point(1180, 4)
         Me.btnRestaurar.Name = "btnRestaurar"
         Me.btnRestaurar.Size = New System.Drawing.Size(30, 30)
         Me.btnRestaurar.TabIndex = 2
@@ -82,7 +82,7 @@ Partial Class MainPageUsuario
         Me.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimizar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_Minimizar
-        Me.btnMinimizar.Location = New System.Drawing.Point(1051, 3)
+        Me.btnMinimizar.Location = New System.Drawing.Point(1144, 3)
         Me.btnMinimizar.Name = "btnMinimizar"
         Me.btnMinimizar.Size = New System.Drawing.Size(30, 30)
         Me.btnMinimizar.TabIndex = 2
@@ -97,7 +97,7 @@ Partial Class MainPageUsuario
         Me.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximizar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_Maximizar
-        Me.btnMaximizar.Location = New System.Drawing.Point(1087, 3)
+        Me.btnMaximizar.Location = New System.Drawing.Point(1180, 3)
         Me.btnMaximizar.Name = "btnMaximizar"
         Me.btnMaximizar.Size = New System.Drawing.Size(30, 30)
         Me.btnMaximizar.TabIndex = 1
@@ -112,21 +112,11 @@ Partial Class MainPageUsuario
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
-        Me.btnCerrar.Location = New System.Drawing.Point(1123, 3)
+        Me.btnCerrar.Location = New System.Drawing.Point(1216, 3)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(30, 30)
         Me.btnCerrar.TabIndex = 0
         Me.btnCerrar.UseVisualStyleBackColor = True
-        '
-        'panelCentral
-        '
-        Me.panelCentral.BackColor = System.Drawing.SystemColors.Window
-        Me.panelCentral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelCentral.Location = New System.Drawing.Point(219, 35)
-        Me.panelCentral.Name = "panelCentral"
-        Me.panelCentral.Size = New System.Drawing.Size(941, 515)
-        Me.panelCentral.TabIndex = 15
         '
         'Panel1
         '
@@ -134,7 +124,7 @@ Partial Class MainPageUsuario
         Me.Panel1.BackgroundImage = Global.Clase_II_Parcial.My.Resources.Resources._96fa72f23263060b83a37cc084d34d85
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel1.Controls.Add(Me.btnRealizarVenta)
+        Me.Panel1.Controls.Add(Me.btnCompras)
         Me.Panel1.Controls.Add(Me.Panel5)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.btnVentas)
@@ -147,26 +137,25 @@ Partial Class MainPageUsuario
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 35)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(219, 515)
+        Me.Panel1.Size = New System.Drawing.Size(219, 511)
         Me.Panel1.TabIndex = 3
         '
-        'btnRealizarVenta
+        'btnCompras
         '
-        Me.btnRealizarVenta.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRealizarVenta.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnRealizarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.GhostWhite
-        Me.btnRealizarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRealizarVenta.Font = New System.Drawing.Font("Fugaz One", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRealizarVenta.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.btnRealizarVenta.Image = Global.Clase_II_Parcial.My.Resources.Resources.icons8_today_32
-        Me.btnRealizarVenta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRealizarVenta.Location = New System.Drawing.Point(27, 236)
-        Me.btnRealizarVenta.Name = "btnRealizarVenta"
-        Me.btnRealizarVenta.Size = New System.Drawing.Size(191, 42)
-        Me.btnRealizarVenta.TabIndex = 16
-        Me.btnRealizarVenta.Text = "Realizar venta"
-        Me.btnRealizarVenta.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnRealizarVenta.UseVisualStyleBackColor = True
+        Me.btnCompras.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCompras.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.GhostWhite
+        Me.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCompras.Font = New System.Drawing.Font("Fugaz One", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCompras.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.btnCompras.Image = Global.Clase_II_Parcial.My.Resources.Resources.calendario
+        Me.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnCompras.Location = New System.Drawing.Point(27, 236)
+        Me.btnCompras.Name = "btnCompras"
+        Me.btnCompras.Size = New System.Drawing.Size(192, 42)
+        Me.btnCompras.TabIndex = 20
+        Me.btnCompras.Text = "   V.Diarias"
+        Me.btnCompras.UseVisualStyleBackColor = True
         '
         'Panel5
         '
@@ -198,7 +187,7 @@ Partial Class MainPageUsuario
         Me.btnVentas.Name = "btnVentas"
         Me.btnVentas.Size = New System.Drawing.Size(191, 42)
         Me.btnVentas.TabIndex = 13
-        Me.btnVentas.Text = "    Ventas"
+        Me.btnVentas.Text = "Ventas"
         Me.btnVentas.UseVisualStyleBackColor = True
         '
         'btnProductos
@@ -215,7 +204,7 @@ Partial Class MainPageUsuario
         Me.btnProductos.Name = "btnProductos"
         Me.btnProductos.Size = New System.Drawing.Size(191, 42)
         Me.btnProductos.TabIndex = 11
-        Me.btnProductos.Text = "    Productos"
+        Me.btnProductos.Text = "       Productos"
         Me.btnProductos.UseVisualStyleBackColor = True
         '
         'Panel6
@@ -262,19 +251,29 @@ Partial Class MainPageUsuario
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA_FINAL1
-        Me.PictureBox1.Location = New System.Drawing.Point(42, 14)
+        Me.PictureBox1.Location = New System.Drawing.Point(59, 16)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(102, 107)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'panelCentral
+        '
+        Me.panelCentral.BackColor = System.Drawing.SystemColors.Window
+        Me.panelCentral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelCentral.Location = New System.Drawing.Point(219, 35)
+        Me.panelCentral.Name = "panelCentral"
+        Me.panelCentral.Size = New System.Drawing.Size(1034, 511)
+        Me.panelCentral.TabIndex = 17
+        '
         'MainPageUsuario
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1160, 550)
+        Me.ClientSize = New System.Drawing.Size(1253, 546)
         Me.Controls.Add(Me.panelCentral)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelSuperior)
@@ -301,8 +300,8 @@ Partial Class MainPageUsuario
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents panelCentral As Panel
-    Friend WithEvents btnRealizarVenta As Button
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents btnCompras As Button
+    Friend WithEvents panelCentral As Panel
 End Class

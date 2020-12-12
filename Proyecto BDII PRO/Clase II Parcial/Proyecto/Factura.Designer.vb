@@ -50,33 +50,36 @@ Partial Class Factura
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA_FINAL1
-        Me.PictureBox1.Location = New System.Drawing.Point(292, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(162, 81)
+        Me.PictureBox1.Size = New System.Drawing.Size(766, 76)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 21
         Me.PictureBox1.TabStop = False
         '
         'txtfecha
         '
-        Me.txtfecha.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtfecha.Location = New System.Drawing.Point(99, 30)
+        Me.txtfecha.Enabled = False
+        Me.txtfecha.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtfecha.Location = New System.Drawing.Point(185, 30)
         Me.txtfecha.Name = "txtfecha"
-        Me.txtfecha.Size = New System.Drawing.Size(100, 26)
+        Me.txtfecha.Size = New System.Drawing.Size(180, 26)
         Me.txtfecha.TabIndex = 22
         '
         'txtnombrecliente
         '
-        Me.txtnombrecliente.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnombrecliente.Location = New System.Drawing.Point(168, 70)
+        Me.txtnombrecliente.Enabled = False
+        Me.txtnombrecliente.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnombrecliente.Location = New System.Drawing.Point(185, 71)
         Me.txtnombrecliente.Name = "txtnombrecliente"
         Me.txtnombrecliente.Size = New System.Drawing.Size(180, 26)
         Me.txtnombrecliente.TabIndex = 23
         '
         'txtnombreempleado
         '
-        Me.txtnombreempleado.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnombreempleado.Location = New System.Drawing.Point(513, 51)
+        Me.txtnombreempleado.Enabled = False
+        Me.txtnombreempleado.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnombreempleado.Location = New System.Drawing.Point(520, 30)
         Me.txtnombreempleado.Name = "txtnombreempleado"
         Me.txtnombreempleado.Size = New System.Drawing.Size(173, 26)
         Me.txtnombreempleado.TabIndex = 24
@@ -84,36 +87,37 @@ Partial Class Factura
         'Fec
         '
         Me.Fec.AutoSize = True
-        Me.Fec.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Fec.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Fec.Location = New System.Drawing.Point(47, 33)
         Me.Fec.Name = "Fec"
-        Me.Fec.Size = New System.Drawing.Size(46, 19)
+        Me.Fec.Size = New System.Drawing.Size(58, 24)
         Me.Fec.TabIndex = 25
         Me.Fec.Text = "Fecha"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(47, 73)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(106, 19)
+        Me.Label2.Size = New System.Drawing.Size(132, 24)
         Me.Label2.TabIndex = 26
         Me.Label2.Text = "Nombre Cliente"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(389, 54)
+        Me.Label3.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(389, 30)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(106, 19)
+        Me.Label3.Size = New System.Drawing.Size(125, 24)
         Me.Label3.TabIndex = 27
         Me.Label3.Text = "Nombre Cajero"
         '
         'txttotal
         '
-        Me.txttotal.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txttotal.Enabled = False
+        Me.txttotal.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txttotal.Location = New System.Drawing.Point(629, 476)
         Me.txttotal.Name = "txttotal"
         Me.txttotal.Size = New System.Drawing.Size(128, 26)
@@ -122,10 +126,10 @@ Partial Class Factura
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(521, 479)
+        Me.Label4.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(506, 478)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(89, 19)
+        Me.Label4.Size = New System.Drawing.Size(117, 24)
         Me.Label4.TabIndex = 29
         Me.Label4.Text = "Total a Pagar"
         '
@@ -139,7 +143,7 @@ Partial Class Factura
         Me.GroupBox1.Controls.Add(Me.Fec)
         Me.GroupBox1.Controls.Add(Me.txtnombreempleado)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 86)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(766, 384)
@@ -157,6 +161,7 @@ Partial Class Factura
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Factura"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Factura"
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -34,6 +34,7 @@ Partial Class Compras
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -41,15 +42,15 @@ Partial Class Compras
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.DGListado)
-        Me.GroupBox2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Location = New System.Drawing.Point(374, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(322, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(620, 417)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Compras"
         '
         'DGListado
         '
@@ -73,9 +74,9 @@ Partial Class Compras
         Me.GroupBox1.Controls.Add(Me.btnEliminar)
         Me.GroupBox1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox1.Location = New System.Drawing.Point(29, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 122)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(339, 295)
+        Me.GroupBox1.Size = New System.Drawing.Size(304, 157)
         Me.GroupBox1.TabIndex = 6
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Datos de compras"
@@ -83,17 +84,17 @@ Partial Class Compras
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(15, 73)
+        Me.Label7.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(15, 38)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 19)
+        Me.Label7.Size = New System.Drawing.Size(62, 24)
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Codigo"
         '
         'txtCodigo
         '
-        Me.txtCodigo.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCodigo.Location = New System.Drawing.Point(97, 66)
+        Me.txtCodigo.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCodigo.Location = New System.Drawing.Point(97, 31)
         Me.txtCodigo.Name = "txtCodigo"
         Me.txtCodigo.Size = New System.Drawing.Size(121, 26)
         Me.txtCodigo.TabIndex = 4
@@ -103,7 +104,7 @@ Partial Class Compras
         Me.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnBuscar.Image = Global.Clase_II_Parcial.My.Resources.Resources.buscar
-        Me.btnBuscar.Location = New System.Drawing.Point(270, 126)
+        Me.btnBuscar.Location = New System.Drawing.Point(120, 103)
         Me.btnBuscar.Name = "btnBuscar"
         Me.btnBuscar.Size = New System.Drawing.Size(51, 45)
         Me.btnBuscar.TabIndex = 38
@@ -114,7 +115,7 @@ Partial Class Compras
         Me.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnEditar.Image = Global.Clase_II_Parcial.My.Resources.Resources.copiar
-        Me.btnEditar.Location = New System.Drawing.Point(270, 75)
+        Me.btnEditar.Location = New System.Drawing.Point(63, 103)
         Me.btnEditar.Name = "btnEditar"
         Me.btnEditar.Size = New System.Drawing.Size(51, 45)
         Me.btnEditar.TabIndex = 37
@@ -125,7 +126,7 @@ Partial Class Compras
         Me.btnIngresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnIngresar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnIngresar.Image = Global.Clase_II_Parcial.My.Resources.Resources.editar1
-        Me.btnIngresar.Location = New System.Drawing.Point(270, 24)
+        Me.btnIngresar.Location = New System.Drawing.Point(6, 103)
         Me.btnIngresar.Name = "btnIngresar"
         Me.btnIngresar.Size = New System.Drawing.Size(51, 45)
         Me.btnIngresar.TabIndex = 36
@@ -133,8 +134,8 @@ Partial Class Compras
         '
         'txtNombre
         '
-        Me.txtNombre.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(97, 100)
+        Me.txtNombre.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(97, 65)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(151, 26)
         Me.txtNombre.TabIndex = 23
@@ -142,10 +143,10 @@ Partial Class Compras
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(15, 107)
+        Me.Label3.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(15, 72)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 19)
+        Me.Label3.Size = New System.Drawing.Size(71, 24)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Nombre"
         '
@@ -154,7 +155,7 @@ Partial Class Compras
         Me.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnLimpiar.Image = Global.Clase_II_Parcial.My.Resources.Resources.limpiar
-        Me.btnLimpiar.Location = New System.Drawing.Point(270, 228)
+        Me.btnLimpiar.Location = New System.Drawing.Point(234, 103)
         Me.btnLimpiar.Name = "btnLimpiar"
         Me.btnLimpiar.Size = New System.Drawing.Size(51, 45)
         Me.btnLimpiar.TabIndex = 3
@@ -165,24 +166,35 @@ Partial Class Compras
         Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnEliminar.Image = Global.Clase_II_Parcial.My.Resources.Resources.eliminar
-        Me.btnEliminar.Location = New System.Drawing.Point(270, 177)
+        Me.btnEliminar.Location = New System.Drawing.Point(177, 103)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(51, 45)
         Me.btnEliminar.TabIndex = 2
         Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(6, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(80, 24)
+        Me.Label1.TabIndex = 44
+        Me.Label1.Text = "Compras"
         '
         'Compras
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
-        Me.ClientSize = New System.Drawing.Size(1025, 450)
+        Me.ClientSize = New System.Drawing.Size(968, 450)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Compras"
         Me.Text = "Compras"
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -202,4 +214,5 @@ Partial Class Compras
     Friend WithEvents Label3 As Label
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents btnEliminar As Button
+    Friend WithEvents Label1 As Label
 End Class

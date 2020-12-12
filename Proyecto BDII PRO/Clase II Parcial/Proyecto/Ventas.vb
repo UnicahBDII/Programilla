@@ -155,7 +155,7 @@
                 consultarventas()
 
             Else
-                MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("La informacion no se acualizo :(", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -196,6 +196,10 @@
     End Sub
 
     Private Sub GroupBox3_Enter(sender As Object, e As EventArgs) Handles GroupBox3.Enter
+
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
 
     End Sub
 End Class

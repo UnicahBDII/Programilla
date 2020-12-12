@@ -23,6 +23,7 @@ Partial Class Productos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.DGListado = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.txtpreciocompra = New System.Windows.Forms.TextBox()
@@ -39,7 +40,6 @@ Partial Class Productos
         Me.Label7 = New System.Windows.Forms.Label()
         Me.idtxt = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -52,6 +52,7 @@ Partial Class Productos
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.dgvModelos = New System.Windows.Forms.DataGridView()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -61,15 +62,25 @@ Partial Class Productos
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.DGListado)
-        Me.GroupBox2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox2.Location = New System.Drawing.Point(357, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(538, 400)
+        Me.GroupBox2.Size = New System.Drawing.Size(538, 387)
         Me.GroupBox2.TabIndex = 6
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Informacion de Productos"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(15, 0)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(217, 24)
+        Me.Label11.TabIndex = 44
+        Me.Label11.Text = "Informacion de productos"
         '
         'DGListado
         '
@@ -78,7 +89,7 @@ Partial Class Productos
         Me.DGListado.Location = New System.Drawing.Point(19, 37)
         Me.DGListado.Name = "DGListado"
         Me.DGListado.RowHeadersWidth = 51
-        Me.DGListado.Size = New System.Drawing.Size(507, 359)
+        Me.DGListado.Size = New System.Drawing.Size(507, 332)
         Me.DGListado.TabIndex = 18
         '
         'GroupBox1
@@ -97,7 +108,6 @@ Partial Class Productos
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.idtxt)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.btnBuscar)
         Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btnIngresar)
         Me.GroupBox1.Controls.Add(Me.Label9)
@@ -108,18 +118,18 @@ Partial Class Productos
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.btnLimpiar)
         Me.GroupBox1.Controls.Add(Me.btnEliminar)
-        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Font = New System.Drawing.Font("Consolas", 14.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(339, 515)
+        Me.GroupBox1.Size = New System.Drawing.Size(339, 505)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         '
         'txtpreciocompra
         '
-        Me.txtpreciocompra.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtpreciocompra.Location = New System.Drawing.Point(119, 187)
+        Me.txtpreciocompra.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtpreciocompra.Location = New System.Drawing.Point(131, 164)
         Me.txtpreciocompra.Name = "txtpreciocompra"
         Me.txtpreciocompra.Size = New System.Drawing.Size(121, 26)
         Me.txtpreciocompra.TabIndex = 53
@@ -127,104 +137,104 @@ Partial Class Productos
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(12, 190)
+        Me.Label10.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(8, 166)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(102, 19)
+        Me.Label10.Size = New System.Drawing.Size(126, 24)
         Me.Label10.TabIndex = 52
         Me.Label10.Text = "Precio.Compra"
         '
         'txtcaracteristica
         '
-        Me.txtcaracteristica.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcaracteristica.Location = New System.Drawing.Point(111, 396)
+        Me.txtcaracteristica.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcaracteristica.Location = New System.Drawing.Point(12, 372)
         Me.txtcaracteristica.Multiline = True
         Me.txtcaracteristica.Name = "txtcaracteristica"
-        Me.txtcaracteristica.Size = New System.Drawing.Size(220, 102)
+        Me.txtcaracteristica.Size = New System.Drawing.Size(311, 115)
         Me.txtcaracteristica.TabIndex = 51
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(-1, 436)
+        Me.Label5.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(98, 345)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(92, 19)
+        Me.Label5.Size = New System.Drawing.Size(130, 24)
         Me.Label5.TabIndex = 50
         Me.Label5.Text = "Caracteristica"
         '
         'txtmodelo
         '
-        Me.txtmodelo.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmodelo.Location = New System.Drawing.Point(101, 330)
+        Me.txtmodelo.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtmodelo.Location = New System.Drawing.Point(131, 294)
         Me.txtmodelo.Name = "txtmodelo"
-        Me.txtmodelo.Size = New System.Drawing.Size(151, 26)
+        Me.txtmodelo.Size = New System.Drawing.Size(121, 26)
         Me.txtmodelo.TabIndex = 49
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(19, 333)
+        Me.Label2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(8, 296)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(49, 19)
+        Me.Label2.Size = New System.Drawing.Size(61, 24)
         Me.Label2.TabIndex = 48
         Me.Label2.Text = "Marca"
         '
         'txtestado
         '
-        Me.txtestado.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtestado.Location = New System.Drawing.Point(101, 296)
+        Me.txtestado.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtestado.Location = New System.Drawing.Point(131, 262)
         Me.txtestado.Name = "txtestado"
-        Me.txtestado.Size = New System.Drawing.Size(151, 26)
+        Me.txtestado.Size = New System.Drawing.Size(121, 26)
         Me.txtestado.TabIndex = 47
         '
         'txtcantidad
         '
-        Me.txtcantidad.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcantidad.Location = New System.Drawing.Point(119, 262)
+        Me.txtcantidad.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcantidad.Location = New System.Drawing.Point(131, 228)
         Me.txtcantidad.Name = "txtcantidad"
         Me.txtcantidad.Size = New System.Drawing.Size(121, 26)
         Me.txtcantidad.TabIndex = 46
         '
         'txtventa
         '
-        Me.txtventa.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtventa.Location = New System.Drawing.Point(119, 228)
+        Me.txtventa.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtventa.Location = New System.Drawing.Point(131, 196)
         Me.txtventa.Name = "txtventa"
         Me.txtventa.Size = New System.Drawing.Size(121, 26)
         Me.txtventa.TabIndex = 45
         '
         'txtnombre
         '
-        Me.txtnombre.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtnombre.Location = New System.Drawing.Point(113, 132)
+        Me.txtnombre.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtnombre.Location = New System.Drawing.Point(131, 130)
         Me.txtnombre.Name = "txtnombre"
-        Me.txtnombre.Size = New System.Drawing.Size(151, 26)
+        Me.txtnombre.Size = New System.Drawing.Size(121, 26)
         Me.txtnombre.TabIndex = 44
         '
         'txttiproducto
         '
-        Me.txttiproducto.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txttiproducto.Location = New System.Drawing.Point(101, 96)
+        Me.txttiproducto.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txttiproducto.Location = New System.Drawing.Point(131, 94)
         Me.txttiproducto.Name = "txttiproducto"
-        Me.txttiproducto.Size = New System.Drawing.Size(151, 26)
+        Me.txttiproducto.Size = New System.Drawing.Size(121, 26)
         Me.txttiproducto.TabIndex = 24
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(17, 27)
+        Me.Label7.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(8, 26)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(22, 19)
+        Me.Label7.Size = New System.Drawing.Size(25, 24)
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Id"
         '
         'idtxt
         '
-        Me.idtxt.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.idtxt.Location = New System.Drawing.Point(101, 24)
+        Me.idtxt.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.idtxt.Location = New System.Drawing.Point(131, 24)
         Me.idtxt.Name = "idtxt"
         Me.idtxt.Size = New System.Drawing.Size(121, 26)
         Me.idtxt.TabIndex = 4
@@ -232,23 +242,12 @@ Partial Class Productos
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(19, 265)
+        Me.Label1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(8, 230)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 19)
+        Me.Label1.Size = New System.Drawing.Size(84, 24)
         Me.Label1.TabIndex = 40
         Me.Label1.Text = "Cantidad"
-        '
-        'btnBuscar
-        '
-        Me.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
-        Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
-        Me.btnBuscar.Image = Global.Clase_II_Parcial.My.Resources.Resources.buscar
-        Me.btnBuscar.Location = New System.Drawing.Point(270, 126)
-        Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(51, 45)
-        Me.btnBuscar.TabIndex = 38
-        Me.btnBuscar.UseVisualStyleBackColor = True
         '
         'btnEditar
         '
@@ -275,58 +274,58 @@ Partial Class Productos
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(17, 138)
+        Me.Label9.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(8, 132)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(60, 19)
+        Me.Label9.Size = New System.Drawing.Size(71, 24)
         Me.Label9.TabIndex = 34
         Me.Label9.Text = "Nombre"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(6, 99)
+        Me.Label8.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(6, 96)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(96, 19)
+        Me.Label8.Size = New System.Drawing.Size(123, 24)
         Me.Label8.TabIndex = 32
         Me.Label8.Text = "Tipo.Producto"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(19, 299)
+        Me.Label6.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(8, 264)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(51, 19)
+        Me.Label6.Size = New System.Drawing.Size(67, 24)
         Me.Label6.TabIndex = 27
         Me.Label6.Text = "Estado"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(17, 231)
+        Me.Label4.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(8, 198)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 19)
+        Me.Label4.Size = New System.Drawing.Size(113, 24)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "Precio.Venta"
         '
         'txtcodbarra
         '
-        Me.txtcodbarra.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtcodbarra.Location = New System.Drawing.Point(101, 58)
+        Me.txtcodbarra.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtcodbarra.Location = New System.Drawing.Point(131, 56)
         Me.txtcodbarra.Name = "txtcodbarra"
-        Me.txtcodbarra.Size = New System.Drawing.Size(151, 26)
+        Me.txtcodbarra.Size = New System.Drawing.Size(121, 26)
         Me.txtcodbarra.TabIndex = 23
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(17, 61)
+        Me.Label3.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(6, 58)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(74, 19)
+        Me.Label3.Size = New System.Drawing.Size(91, 24)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Cod.Barra"
         '
@@ -335,7 +334,7 @@ Partial Class Productos
         Me.btnLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnLimpiar.Image = Global.Clase_II_Parcial.My.Resources.Resources.limpiar
-        Me.btnLimpiar.Location = New System.Drawing.Point(270, 228)
+        Me.btnLimpiar.Location = New System.Drawing.Point(270, 177)
         Me.btnLimpiar.Name = "btnLimpiar"
         Me.btnLimpiar.Size = New System.Drawing.Size(51, 45)
         Me.btnLimpiar.TabIndex = 3
@@ -346,7 +345,7 @@ Partial Class Productos
         Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DimGray
         Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
         Me.btnEliminar.Image = Global.Clase_II_Parcial.My.Resources.Resources.eliminar
-        Me.btnEliminar.Location = New System.Drawing.Point(270, 177)
+        Me.btnEliminar.Location = New System.Drawing.Point(270, 126)
         Me.btnEliminar.Name = "btnEliminar"
         Me.btnEliminar.Size = New System.Drawing.Size(51, 45)
         Me.btnEliminar.TabIndex = 2
@@ -355,23 +354,34 @@ Partial Class Productos
         'dgvModelos
         '
         Me.dgvModelos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvModelos.Location = New System.Drawing.Point(50, 17)
+        Me.dgvModelos.Location = New System.Drawing.Point(19, 19)
         Me.dgvModelos.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvModelos.Name = "dgvModelos"
         Me.dgvModelos.RowHeadersWidth = 51
         Me.dgvModelos.RowTemplate.Height = 24
-        Me.dgvModelos.Size = New System.Drawing.Size(376, 88)
+        Me.dgvModelos.Size = New System.Drawing.Size(293, 88)
         Me.dgvModelos.TabIndex = 7
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.Label12)
         Me.GroupBox3.Controls.Add(Me.dgvModelos)
-        Me.GroupBox3.Font = New System.Drawing.Font("Fugaz One", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(392, 423)
+        Me.GroupBox3.Font = New System.Drawing.Font("Consolas", 11.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(357, 405)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(469, 112)
+        Me.GroupBox3.Size = New System.Drawing.Size(327, 112)
         Me.GroupBox3.TabIndex = 8
         Me.GroupBox3.TabStop = False
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(6, -7)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(61, 24)
+        Me.Label12.TabIndex = 45
+        Me.Label12.Text = "Marca"
         '
         'Productos
         '
@@ -386,11 +396,13 @@ Partial Class Productos
         Me.Name = "Productos"
         Me.Text = "Productos"
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.dgvModelos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -406,7 +418,6 @@ Partial Class Productos
     Friend WithEvents Label7 As Label
     Friend WithEvents idtxt As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents btnBuscar As Button
     Friend WithEvents btnEditar As Button
     Friend WithEvents btnIngresar As Button
     Friend WithEvents Label9 As Label
@@ -425,4 +436,6 @@ Partial Class Productos
     Friend WithEvents Label10 As Label
     Friend WithEvents dgvModelos As DataGridView
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
 End Class

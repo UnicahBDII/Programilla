@@ -28,13 +28,15 @@ Partial Class MainPage
         Me.btnMaximizar = New System.Windows.Forms.Button()
         Me.btnMinimizar = New System.Windows.Forms.Button()
         Me.btnCerrar = New System.Windows.Forms.Button()
-        Me.panelCentral = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.txtRegistro = New System.Windows.Forms.Button()
+        Me.txtTelefono = New System.Windows.Forms.Button()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnVentas = New System.Windows.Forms.Button()
-        Me.btnCompras = New System.Windows.Forms.Button()
         Me.btnProductos = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.btnSalir = New System.Windows.Forms.Button()
@@ -43,6 +45,7 @@ Partial Class MainPage
         Me.btnUsuarios = New System.Windows.Forms.Button()
         Me.btnEmpleados = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.panelCentral = New System.Windows.Forms.Panel()
         Me.PanelSuperior.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,7 +61,7 @@ Partial Class MainPage
         Me.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelSuperior.Location = New System.Drawing.Point(0, 0)
         Me.PanelSuperior.Name = "PanelSuperior"
-        Me.PanelSuperior.Size = New System.Drawing.Size(1183, 36)
+        Me.PanelSuperior.Size = New System.Drawing.Size(1244, 36)
         Me.PanelSuperior.TabIndex = 1
         '
         'btnRestaurar
@@ -70,7 +73,7 @@ Partial Class MainPage
         Me.btnRestaurar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnRestaurar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRestaurar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_Restaurar
-        Me.btnRestaurar.Location = New System.Drawing.Point(1111, 3)
+        Me.btnRestaurar.Location = New System.Drawing.Point(1172, 3)
         Me.btnRestaurar.Name = "btnRestaurar"
         Me.btnRestaurar.Size = New System.Drawing.Size(30, 30)
         Me.btnRestaurar.TabIndex = 8
@@ -85,7 +88,7 @@ Partial Class MainPage
         Me.btnMaximizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMaximizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximizar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_Maximizar
-        Me.btnMaximizar.Location = New System.Drawing.Point(1106, 3)
+        Me.btnMaximizar.Location = New System.Drawing.Point(1167, 3)
         Me.btnMaximizar.Name = "btnMaximizar"
         Me.btnMaximizar.Size = New System.Drawing.Size(30, 30)
         Me.btnMaximizar.TabIndex = 7
@@ -100,7 +103,7 @@ Partial Class MainPage
         Me.btnMinimizar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnMinimizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimizar.Image = Global.Clase_II_Parcial.My.Resources.Resources.Icono_Minimizar
-        Me.btnMinimizar.Location = New System.Drawing.Point(1070, 3)
+        Me.btnMinimizar.Location = New System.Drawing.Point(1131, 3)
         Me.btnMinimizar.Name = "btnMinimizar"
         Me.btnMinimizar.Size = New System.Drawing.Size(30, 30)
         Me.btnMinimizar.TabIndex = 6
@@ -115,21 +118,11 @@ Partial Class MainPage
         Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red
         Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCerrar.Image = CType(resources.GetObject("btnCerrar.Image"), System.Drawing.Image)
-        Me.btnCerrar.Location = New System.Drawing.Point(1147, 3)
+        Me.btnCerrar.Location = New System.Drawing.Point(1208, 3)
         Me.btnCerrar.Name = "btnCerrar"
         Me.btnCerrar.Size = New System.Drawing.Size(30, 30)
         Me.btnCerrar.TabIndex = 3
         Me.btnCerrar.UseVisualStyleBackColor = True
-        '
-        'panelCentral
-        '
-        Me.panelCentral.BackColor = System.Drawing.SystemColors.Window
-        Me.panelCentral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelCentral.Location = New System.Drawing.Point(220, 36)
-        Me.panelCentral.Name = "panelCentral"
-        Me.panelCentral.Size = New System.Drawing.Size(963, 554)
-        Me.panelCentral.TabIndex = 14
         '
         'Panel1
         '
@@ -137,11 +130,14 @@ Partial Class MainPage
         Me.Panel1.BackgroundImage = Global.Clase_II_Parcial.My.Resources.Resources._96fa72f23263060b83a37cc084d34d85
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel1.Controls.Add(Me.txtRegistro)
+        Me.Panel1.Controls.Add(Me.txtTelefono)
+        Me.Panel1.Controls.Add(Me.Panel9)
+        Me.Panel1.Controls.Add(Me.Panel8)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Controls.Add(Me.Panel7)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.btnVentas)
-        Me.Panel1.Controls.Add(Me.btnCompras)
         Me.Panel1.Controls.Add(Me.btnProductos)
         Me.Panel1.Controls.Add(Me.Panel6)
         Me.Panel1.Controls.Add(Me.btnSalir)
@@ -153,13 +149,63 @@ Partial Class MainPage
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 36)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(220, 554)
+        Me.Panel1.Size = New System.Drawing.Size(220, 586)
         Me.Panel1.TabIndex = 2
+        '
+        'txtRegistro
+        '
+        Me.txtRegistro.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.txtRegistro.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtRegistro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.GhostWhite
+        Me.txtRegistro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.txtRegistro.Font = New System.Drawing.Font("Fugaz One", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtRegistro.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.txtRegistro.Image = Global.Clase_II_Parcial.My.Resources.Resources.tableta
+        Me.txtRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.txtRegistro.Location = New System.Drawing.Point(27, 380)
+        Me.txtRegistro.Name = "txtRegistro"
+        Me.txtRegistro.Size = New System.Drawing.Size(192, 42)
+        Me.txtRegistro.TabIndex = 19
+        Me.txtRegistro.Text = "   Registros"
+        Me.txtRegistro.UseVisualStyleBackColor = True
+        '
+        'txtTelefono
+        '
+        Me.txtTelefono.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.txtTelefono.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.txtTelefono.FlatAppearance.MouseOverBackColor = System.Drawing.Color.GhostWhite
+        Me.txtTelefono.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.txtTelefono.Font = New System.Drawing.Font("Fugaz One", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefono.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.txtTelefono.Image = Global.Clase_II_Parcial.My.Resources.Resources.sgdzg
+        Me.txtTelefono.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.txtTelefono.Location = New System.Drawing.Point(27, 236)
+        Me.txtTelefono.Name = "txtTelefono"
+        Me.txtTelefono.Size = New System.Drawing.Size(192, 42)
+        Me.txtTelefono.TabIndex = 18
+        Me.txtTelefono.Text = "     Telefonos"
+        Me.txtTelefono.UseVisualStyleBackColor = True
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.SystemColors.Desktop
+        Me.Panel9.Location = New System.Drawing.Point(3, 476)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(18, 42)
+        Me.Panel9.TabIndex = 17
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.SystemColors.Desktop
+        Me.Panel8.Location = New System.Drawing.Point(3, 380)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(18, 42)
+        Me.Panel8.TabIndex = 16
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Clase_II_Parcial.My.Resources.Resources.LOGO_EMPRESA_FINAL1
-        Me.PictureBox2.Location = New System.Drawing.Point(49, 15)
+        Me.PictureBox2.Location = New System.Drawing.Point(57, 15)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(102, 107)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -199,23 +245,6 @@ Partial Class MainPage
         Me.btnVentas.Text = "Ventas"
         Me.btnVentas.UseVisualStyleBackColor = True
         '
-        'btnCompras
-        '
-        Me.btnCompras.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCompras.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnCompras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.GhostWhite
-        Me.btnCompras.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCompras.Font = New System.Drawing.Font("Fugaz One", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCompras.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.btnCompras.Image = CType(resources.GetObject("btnCompras.Image"), System.Drawing.Image)
-        Me.btnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnCompras.Location = New System.Drawing.Point(27, 236)
-        Me.btnCompras.Name = "btnCompras"
-        Me.btnCompras.Size = New System.Drawing.Size(192, 42)
-        Me.btnCompras.TabIndex = 12
-        Me.btnCompras.Text = "   Compras"
-        Me.btnCompras.UseVisualStyleBackColor = True
-        '
         'btnProductos
         '
         Me.btnProductos.Cursor = System.Windows.Forms.Cursors.Hand
@@ -230,13 +259,13 @@ Partial Class MainPage
         Me.btnProductos.Name = "btnProductos"
         Me.btnProductos.Size = New System.Drawing.Size(192, 42)
         Me.btnProductos.TabIndex = 11
-        Me.btnProductos.Text = "     Productos"
+        Me.btnProductos.Text = "       Productos"
         Me.btnProductos.UseVisualStyleBackColor = True
         '
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.SystemColors.Desktop
-        Me.Panel6.Location = New System.Drawing.Point(3, 420)
+        Me.Panel6.Location = New System.Drawing.Point(3, 428)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(18, 42)
         Me.Panel6.TabIndex = 10
@@ -251,7 +280,7 @@ Partial Class MainPage
         Me.btnSalir.ForeColor = System.Drawing.SystemColors.Desktop
         Me.btnSalir.Image = Global.Clase_II_Parcial.My.Resources.Resources.icons8_delete_32
         Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSalir.Location = New System.Drawing.Point(27, 420)
+        Me.btnSalir.Location = New System.Drawing.Point(27, 476)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(192, 42)
         Me.btnSalir.TabIndex = 9
@@ -305,7 +334,7 @@ Partial Class MainPage
         Me.btnEmpleados.Name = "btnEmpleados"
         Me.btnEmpleados.Size = New System.Drawing.Size(192, 42)
         Me.btnEmpleados.TabIndex = 6
-        Me.btnEmpleados.Text = "   Empleados"
+        Me.btnEmpleados.Text = "        Empleados"
         Me.btnEmpleados.UseVisualStyleBackColor = True
         '
         'Panel3
@@ -316,11 +345,21 @@ Partial Class MainPage
         Me.Panel3.Size = New System.Drawing.Size(18, 42)
         Me.Panel3.TabIndex = 6
         '
+        'panelCentral
+        '
+        Me.panelCentral.BackColor = System.Drawing.SystemColors.Window
+        Me.panelCentral.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.panelCentral.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelCentral.Location = New System.Drawing.Point(220, 36)
+        Me.panelCentral.Name = "panelCentral"
+        Me.panelCentral.Size = New System.Drawing.Size(1024, 586)
+        Me.panelCentral.TabIndex = 16
+        '
         'MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1183, 590)
+        Me.ClientSize = New System.Drawing.Size(1244, 622)
         Me.Controls.Add(Me.panelCentral)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.PanelSuperior)
@@ -347,12 +386,15 @@ Partial Class MainPage
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnVentas As Button
-    Friend WithEvents btnCompras As Button
     Friend WithEvents btnProductos As Button
-    Friend WithEvents panelCentral As Panel
     Friend WithEvents btnMinimizar As Button
     Friend WithEvents btnCerrar As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btnRestaurar As Button
     Friend WithEvents btnMaximizar As Button
+    Friend WithEvents txtTelefono As Button
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents txtRegistro As Button
+    Friend WithEvents panelCentral As Panel
 End Class

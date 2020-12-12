@@ -51,6 +51,7 @@ Partial Class EMPLEADOS
         Me.btnEliminar = New System.Windows.Forms.Button()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.ErrorValidacion = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -59,24 +60,24 @@ Partial Class EMPLEADOS
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.DGListado)
-        Me.GroupBox2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.GroupBox2.Location = New System.Drawing.Point(357, 20)
+        Me.GroupBox2.Location = New System.Drawing.Point(357, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(565, 407)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Ingreso De informacion"
         '
         'DGListado
         '
         Me.DGListado.AllowUserToAddRows = False
         Me.DGListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGListado.Location = New System.Drawing.Point(19, 40)
+        Me.DGListado.Location = New System.Drawing.Point(19, 27)
         Me.DGListado.Name = "DGListado"
         Me.DGListado.RowHeadersWidth = 51
-        Me.DGListado.Size = New System.Drawing.Size(527, 342)
+        Me.DGListado.Size = New System.Drawing.Size(524, 363)
         Me.DGListado.TabIndex = 18
         '
         'GroupBox1
@@ -108,7 +109,7 @@ Partial Class EMPLEADOS
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(339, 421)
+        Me.GroupBox1.Size = New System.Drawing.Size(339, 405)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Ingreso De informacion"
@@ -116,87 +117,87 @@ Partial Class EMPLEADOS
         'txtestado
         '
         Me.txtestado.Enabled = False
-        Me.txtestado.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtestado.Location = New System.Drawing.Point(90, 303)
+        Me.txtestado.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtestado.Location = New System.Drawing.Point(118, 251)
         Me.txtestado.Name = "txtestado"
-        Me.txtestado.Size = New System.Drawing.Size(121, 26)
+        Me.txtestado.Size = New System.Drawing.Size(146, 26)
         Me.txtestado.TabIndex = 45
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(18, 306)
+        Me.Label8.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(23, 253)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 19)
+        Me.Label8.Size = New System.Drawing.Size(67, 24)
         Me.Label8.TabIndex = 44
         Me.Label8.Text = "Estado"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(19, 31)
+        Me.Label7.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(23, 27)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 19)
+        Me.Label7.Size = New System.Drawing.Size(62, 24)
         Me.Label7.TabIndex = 43
         Me.Label7.Text = "Codigo"
         '
         'txtCodigo
         '
-        Me.txtCodigo.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCodigo.Location = New System.Drawing.Point(99, 24)
+        Me.txtCodigo.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCodigo.Location = New System.Drawing.Point(118, 24)
         Me.txtCodigo.Name = "txtCodigo"
-        Me.txtCodigo.Size = New System.Drawing.Size(121, 26)
+        Me.txtCodigo.Size = New System.Drawing.Size(146, 26)
         Me.txtCodigo.TabIndex = 4
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(6, 265)
+        Me.Label2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(23, 221)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 19)
+        Me.Label2.Size = New System.Drawing.Size(85, 24)
         Me.Label2.TabIndex = 42
         Me.Label2.Text = "ID puesto"
         '
         'cmbSexo
         '
         Me.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbSexo.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbSexo.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbSexo.FormattingEnabled = True
         Me.cmbSexo.Items.AddRange(New Object() {"Femenino", "Masculino"})
-        Me.cmbSexo.Location = New System.Drawing.Point(93, 177)
+        Me.cmbSexo.Location = New System.Drawing.Point(118, 152)
         Me.cmbSexo.Name = "cmbSexo"
-        Me.cmbSexo.Size = New System.Drawing.Size(100, 27)
+        Me.cmbSexo.Size = New System.Drawing.Size(146, 27)
         Me.cmbSexo.TabIndex = 41
         '
         'txtidpuesto
         '
         Me.txtidpuesto.Enabled = False
-        Me.txtidpuesto.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtidpuesto.Location = New System.Drawing.Point(91, 265)
+        Me.txtidpuesto.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtidpuesto.Location = New System.Drawing.Point(118, 219)
         Me.txtidpuesto.Name = "txtidpuesto"
-        Me.txtidpuesto.Size = New System.Drawing.Size(121, 26)
+        Me.txtidpuesto.Size = New System.Drawing.Size(146, 26)
         Me.txtidpuesto.TabIndex = 24
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(31, 138)
+        Me.Label1.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(23, 122)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(41, 19)
+        Me.Label1.Size = New System.Drawing.Size(50, 24)
         Me.Label1.TabIndex = 40
         Me.Label1.Text = "Edad"
         '
         'txtEdad
         '
-        Me.txtEdad.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEdad.Location = New System.Drawing.Point(97, 132)
-        Me.txtEdad.Mask = "99"
+        Me.txtEdad.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEdad.Location = New System.Drawing.Point(118, 120)
+        Me.txtEdad.Mask = "       99"
         Me.txtEdad.Name = "txtEdad"
-        Me.txtEdad.Size = New System.Drawing.Size(42, 26)
+        Me.txtEdad.Size = New System.Drawing.Size(146, 26)
         Me.txtEdad.TabIndex = 39
         Me.txtEdad.ValidatingType = GetType(Integer)
         '
@@ -235,88 +236,88 @@ Partial Class EMPLEADOS
         '
         'txtIdentidad
         '
-        Me.txtIdentidad.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIdentidad.Location = New System.Drawing.Point(99, 58)
+        Me.txtIdentidad.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtIdentidad.Location = New System.Drawing.Point(118, 56)
         Me.txtIdentidad.Mask = "9999-9999-99999"
         Me.txtIdentidad.Name = "txtIdentidad"
-        Me.txtIdentidad.Size = New System.Drawing.Size(100, 26)
+        Me.txtIdentidad.Size = New System.Drawing.Size(146, 26)
         Me.txtIdentidad.TabIndex = 15
         '
         'cmbPuesto
         '
         Me.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbPuesto.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbPuesto.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbPuesto.FormattingEnabled = True
         Me.cmbPuesto.Items.AddRange(New Object() {"Gerente", "Jefe de calidad ", "Jefe de TI (Infraestructura)", "Jefe de TI (Desarrollo)", "Soporte TI", "Medios", "Marketing", "Jefe RRHH", "Ejecutivos de RRHH", "Dependiente", "Cocinero", "Tecnicos de mantenimiento", "Desarrollador", "Operador", "Chofer", "Programador"})
-        Me.cmbPuesto.Location = New System.Drawing.Point(91, 225)
+        Me.cmbPuesto.Location = New System.Drawing.Point(118, 186)
         Me.cmbPuesto.Name = "cmbPuesto"
-        Me.cmbPuesto.Size = New System.Drawing.Size(121, 27)
+        Me.cmbPuesto.Size = New System.Drawing.Size(146, 27)
         Me.cmbPuesto.TabIndex = 28
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(29, 177)
+        Me.Label6.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(23, 155)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(43, 19)
+        Me.Label6.Size = New System.Drawing.Size(52, 24)
         Me.Label6.TabIndex = 27
         Me.Label6.Text = "Sexo:"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(19, 228)
+        Me.Label5.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(23, 189)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(50, 19)
+        Me.Label5.Size = New System.Drawing.Size(66, 24)
         Me.Label5.TabIndex = 26
         Me.Label5.Text = "Puesto"
         '
         'txtBarrio
         '
-        Me.txtBarrio.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBarrio.Location = New System.Drawing.Point(90, 342)
+        Me.txtBarrio.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBarrio.Location = New System.Drawing.Point(27, 317)
         Me.txtBarrio.Multiline = True
         Me.txtBarrio.Name = "txtBarrio"
-        Me.txtBarrio.Size = New System.Drawing.Size(231, 73)
+        Me.txtBarrio.Size = New System.Drawing.Size(294, 73)
         Me.txtBarrio.TabIndex = 25
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(3, 371)
+        Me.Label4.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(128, 289)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 19)
+        Me.Label4.Size = New System.Drawing.Size(85, 24)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "Direccion"
         '
         'txtNombre
         '
-        Me.txtNombre.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtNombre.Location = New System.Drawing.Point(98, 92)
+        Me.txtNombre.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtNombre.Location = New System.Drawing.Point(118, 88)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(151, 26)
+        Me.txtNombre.Size = New System.Drawing.Size(146, 26)
         Me.txtNombre.TabIndex = 23
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(19, 99)
+        Me.Label3.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(23, 90)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 19)
+        Me.Label3.Size = New System.Drawing.Size(71, 24)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Nombre"
         '
         'txtId
         '
         Me.txtId.AutoSize = True
-        Me.txtId.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtId.Location = New System.Drawing.Point(19, 65)
+        Me.txtId.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtId.Location = New System.Drawing.Point(23, 58)
         Me.txtId.Name = "txtId"
-        Me.txtId.Size = New System.Drawing.Size(66, 19)
+        Me.txtId.Size = New System.Drawing.Size(88, 24)
         Me.txtId.TabIndex = 21
         Me.txtId.Text = "Identidad"
         '
@@ -346,6 +347,16 @@ Partial Class EMPLEADOS
         '
         Me.ErrorValidacion.ContainerControl = Me
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(6, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(194, 24)
+        Me.Label9.TabIndex = 28
+        Me.Label9.Text = "Ingreso de informacion"
+        '
         'EMPLEADOS
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -359,6 +370,7 @@ Partial Class EMPLEADOS
         Me.Name = "EMPLEADOS"
         Me.Text = "EMPLEADOS"
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         CType(Me.DGListado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -395,4 +407,5 @@ Partial Class EMPLEADOS
     Friend WithEvents txtidpuesto As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents txtestado As TextBox
+    Friend WithEvents Label9 As Label
 End Class

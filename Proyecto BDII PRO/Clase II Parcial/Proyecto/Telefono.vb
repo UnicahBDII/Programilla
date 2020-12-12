@@ -9,6 +9,10 @@ Public Class Telefono
     Dim puesto As String
     Dim idPuesto As String
 
+    Private Sub DGtelefono_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGtelefono.CellContentClick
+
+    End Sub
+
 
     'Private Sub Telefono_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

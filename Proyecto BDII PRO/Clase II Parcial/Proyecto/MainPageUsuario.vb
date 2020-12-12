@@ -57,12 +57,16 @@
         End If
     End Sub
 
-    Private Sub btnRealizarVenta_Click(sender As Object, e As EventArgs) Handles btnRealizarVenta.Click
+    Private Sub btnRealizarVenta_Click(sender As Object, e As EventArgs)
         AbrirFormulario(detalleventas)
 
     End Sub
 
     Private Sub MainPageUsuario_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnRestaurar.Visible = False
+    End Sub
+
+    Private Sub btnCompras_Click(sender As Object, e As EventArgs) Handles btnCompras.Click
+        AbrirFormulario(ventasDiarias)
     End Sub
 End Class
