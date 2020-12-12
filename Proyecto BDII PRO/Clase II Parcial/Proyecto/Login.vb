@@ -23,6 +23,8 @@ Public Class Login
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtContraseña.Clear()
+        txtUsuario.Clear()
 
     End Sub
 

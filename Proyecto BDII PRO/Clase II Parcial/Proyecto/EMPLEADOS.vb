@@ -13,7 +13,6 @@ Public Class EMPLEADOS
         txtCodigo.Clear()
         txtIdentidad.Clear()
         txtBarrio.Clear()
-        cmbPuesto.SelectedIndex = -1
         txtNombre.Clear()
         txtEdad.Clear()
         txtidpuesto.Clear()
@@ -41,13 +40,13 @@ Public Class EMPLEADOS
 
     Private Sub Button2_Click(sender As Object, e As EventArgs)
         Dim id As Integer
-        id = cmbPuesto.SelectedIndex
+
         txtidpuesto.Text = id
 
     End Sub
-    Private Sub cmbPuesto_LostFocus(sender As Object, e As EventArgs) Handles cmbPuesto.LostFocus
+    Private Sub cmbPuesto_LostFocus(sender As Object, e As EventArgs)
         Dim id As Integer
-        id = cmbPuesto.SelectedIndex
+
         txtidpuesto.Text = id
     End Sub
 
@@ -121,8 +120,8 @@ Public Class EMPLEADOS
         ToolTip.ToolTipIcon = ToolTipIcon.Info
     End Sub
 
-    Private Sub cmbPuesto_MouseHover(sender As Object, e As EventArgs) Handles cmbPuesto.MouseHover
-        ToolTip.SetToolTip(cmbPuesto, "Ejemplo: Jefe de RRHH")
+    Private Sub cmbPuesto_MouseHover(sender As Object, e As EventArgs)
+
         ToolTip.ToolTipTitle = "Puesto"
         ToolTip.ToolTipIcon = ToolTipIcon.Info
     End Sub
@@ -209,7 +208,7 @@ Public Class EMPLEADOS
         End If
     End Sub
 
-    Private Sub cmbPuesto_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles cmbPuesto.Validating
+    Private Sub cmbPuesto_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs)
         If DirectCast(sender, ComboBox).Text.Length > 0 Then
             Me.ErrorValidacion.SetError(sender, "")
         Else
@@ -267,11 +266,11 @@ Public Class EMPLEADOS
 
 
             If conexion.ingresarEmpleado(idcodigo, Identidad, nombre, direccion, edad, sexo, idpuesto) Then
-                MessageBox.Show("Información Actualizada correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                MessageBox.Show("Información Ingresada correctamente", "Ingresada", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 consultarEmpleado()
             Else
-                MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                End If
+                MessageBox.Show("Error de registro", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
 
 
         Catch ex As Exception
@@ -297,7 +296,7 @@ Public Class EMPLEADOS
                 MessageBox.Show("Información Actualizada correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 consultarEmpleado()
             Else
-                MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Error de Actualizacion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -314,7 +313,7 @@ Public Class EMPLEADOS
                 MessageBox.Show("Información Eliminada correctamente", "Eliminando", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 consultarEmpleado()
             Else
-                MessageBox.Show("Presidente no encontrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Error de eliminacion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)

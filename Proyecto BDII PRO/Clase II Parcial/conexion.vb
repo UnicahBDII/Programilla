@@ -168,7 +168,7 @@ Public Class conexion
 
 
     'procedimientos para productos'
-    Public Function ingresarProductos(id As Integer, codigobarra As String, nombre As String, preciocompra As Decimal,
+    Public Function ingresarProductos(id As Integer, codigobarra As String, tipoProducto As Integer, nombre As String, preciocompra As Decimal,
                                          precioventa As Decimal, cantidad As Integer, caracteristicas As String, modelo As Integer) As Boolean
         Try
             conexion.Open()
@@ -177,6 +177,7 @@ Public Class conexion
 
             cmd.Parameters.AddWithValue("@id", id)
             cmd.Parameters.AddWithValue("@codigobarra", codigobarra)
+            cmd.Parameters.AddWithValue("@tipoproducto", tipoProducto)
             cmd.Parameters.AddWithValue("@nombre", nombre)
             cmd.Parameters.AddWithValue("@precio", preciocompra)
             cmd.Parameters.AddWithValue("@precioventa", precioventa)

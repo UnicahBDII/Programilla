@@ -54,8 +54,9 @@ Public Class MainPage
     End Sub
 
     Private Sub btnSalir_Click(sender As Object, e As EventArgs) Handles btnSalir.Click
-        If MsgBox("Desea salir de la aplicacion?", vbQuestion + vbYesNo, "Salir") = vbYes Then
-            End
+        If MsgBox("¿Desea cerrar sesion?", vbQuestion + vbYesNo, "Salir") = vbYes Then
+            Login.Show()
+            Me.Close()
         End If
     End Sub
 

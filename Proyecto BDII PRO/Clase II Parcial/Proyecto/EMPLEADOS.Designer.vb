@@ -40,9 +40,7 @@ Partial Class EMPLEADOS
         Me.btnEditar = New System.Windows.Forms.Button()
         Me.btnIngresar = New System.Windows.Forms.Button()
         Me.txtIdentidad = New System.Windows.Forms.MaskedTextBox()
-        Me.cmbPuesto = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.txtBarrio = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtNombre = New System.Windows.Forms.TextBox()
@@ -105,9 +103,7 @@ Partial Class EMPLEADOS
         Me.GroupBox1.Controls.Add(Me.btnEditar)
         Me.GroupBox1.Controls.Add(Me.btnIngresar)
         Me.GroupBox1.Controls.Add(Me.txtIdentidad)
-        Me.GroupBox1.Controls.Add(Me.cmbPuesto)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.txtBarrio)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.txtNombre)
@@ -128,7 +124,7 @@ Partial Class EMPLEADOS
         '
         Me.txtestado.Enabled = False
         Me.txtestado.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtestado.Location = New System.Drawing.Point(118, 251)
+        Me.txtestado.Location = New System.Drawing.Point(118, 218)
         Me.txtestado.Name = "txtestado"
         Me.txtestado.Size = New System.Drawing.Size(146, 26)
         Me.txtestado.TabIndex = 45
@@ -137,7 +133,7 @@ Partial Class EMPLEADOS
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(23, 253)
+        Me.Label8.Location = New System.Drawing.Point(23, 220)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(67, 24)
         Me.Label8.TabIndex = 44
@@ -165,7 +161,7 @@ Partial Class EMPLEADOS
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(23, 221)
+        Me.Label2.Location = New System.Drawing.Point(23, 188)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(85, 24)
         Me.Label2.TabIndex = 42
@@ -184,9 +180,8 @@ Partial Class EMPLEADOS
         '
         'txtidpuesto
         '
-        Me.txtidpuesto.Enabled = False
         Me.txtidpuesto.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtidpuesto.Location = New System.Drawing.Point(118, 219)
+        Me.txtidpuesto.Location = New System.Drawing.Point(118, 186)
         Me.txtidpuesto.Name = "txtidpuesto"
         Me.txtidpuesto.Size = New System.Drawing.Size(146, 26)
         Me.txtidpuesto.TabIndex = 24
@@ -265,17 +260,6 @@ Partial Class EMPLEADOS
         Me.txtIdentidad.Size = New System.Drawing.Size(146, 26)
         Me.txtIdentidad.TabIndex = 15
         '
-        'cmbPuesto
-        '
-        Me.cmbPuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbPuesto.Font = New System.Drawing.Font("Consolas", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbPuesto.FormattingEnabled = True
-        Me.cmbPuesto.Items.AddRange(New Object() {"Gerente", "Jefe de calidad ", "Jefe de TI (Infraestructura)", "Jefe de TI (Desarrollo)", "Soporte TI", "Medios", "Marketing", "Jefe RRHH", "Ejecutivos de RRHH", "Dependiente", "Cocinero", "Tecnicos de mantenimiento", "Desarrollador", "Operador", "Chofer", "Programador"})
-        Me.cmbPuesto.Location = New System.Drawing.Point(118, 186)
-        Me.cmbPuesto.Name = "cmbPuesto"
-        Me.cmbPuesto.Size = New System.Drawing.Size(146, 27)
-        Me.cmbPuesto.TabIndex = 28
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -285,16 +269,6 @@ Partial Class EMPLEADOS
         Me.Label6.Size = New System.Drawing.Size(52, 24)
         Me.Label6.TabIndex = 27
         Me.Label6.Text = "Sexo:"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Fugaz One", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(23, 189)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(66, 24)
-        Me.Label5.TabIndex = 26
-        Me.Label5.Text = "Puesto"
         '
         'txtBarrio
         '
@@ -402,9 +376,7 @@ Partial Class EMPLEADOS
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents txtIdentidad As MaskedTextBox
-    Friend WithEvents cmbPuesto As ComboBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents txtBarrio As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtNombre As TextBox

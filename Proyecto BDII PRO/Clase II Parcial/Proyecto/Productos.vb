@@ -31,11 +31,12 @@
 
     Private Sub ingresarProducto()
         Try
-            Dim id As Integer, codigobarra As String, nombre As String, preciocompra As Decimal,
+            Dim id As Integer, codigobarra As String, tipoProducto As Integer, nombre As String, preciocompra As Decimal,
             precioventa As Decimal, cantidad As Integer, caracteristicas As String, modelo As Integer
 
             id = idtxt.Text
             codigobarra = txtcodbarra.Text
+            tipoProducto = txttiproducto.Text
             nombre = txtnombre.Text
             preciocompra = txtpreciocompra.Text
             precioventa = txtventa.Text
@@ -45,7 +46,7 @@
 
 
 
-            If conexion.ingresarProductos(id, codigobarra, nombre, preciocompra, precioventa, cantidad, caracteristicas, modelo) Then
+            If conexion.ingresarProductos(id, codigobarra, tipoProducto, nombre, preciocompra, precioventa, cantidad, caracteristicas, modelo) Then
                 MessageBox.Show("producto ingresado correctamente", "Actualizando", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 consultarproducto()
             Else
@@ -179,6 +180,10 @@
     End Sub
 
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+
+    End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs) Handles GroupBox2.Enter
 
     End Sub
 End Class

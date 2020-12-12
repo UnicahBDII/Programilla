@@ -223,13 +223,12 @@ Partial Class MainPageUsuario
         Me.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSalir.Font = New System.Drawing.Font("Fugaz One", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalir.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.btnSalir.Image = Global.Clase_II_Parcial.My.Resources.Resources.icons8_delete_321
         Me.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSalir.Location = New System.Drawing.Point(27, 332)
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(191, 42)
         Me.btnSalir.TabIndex = 9
-        Me.btnSalir.Text = "   Salir"
+        Me.btnSalir.Text = "Cerrar sesion"
         Me.btnSalir.UseVisualStyleBackColor = True
         '
         'Panel4
