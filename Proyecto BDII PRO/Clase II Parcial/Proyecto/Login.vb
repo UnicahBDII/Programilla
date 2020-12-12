@@ -1,6 +1,13 @@
 ﻿Imports System.Runtime.InteropServices
 
 Public Class Login
+    Dim conexion As conexion = New conexion()
+
+    Dim dt As New DataTable
+    Dim direccion As String
+    Dim Identidad As String
+    Dim index As Integer
+    Dim DataT As New DataTable
 
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
@@ -26,6 +33,15 @@ Public Class Login
 
     Private Sub btnIngresar_Click(sender As Object, e As EventArgs) Handles btnIngresar.Click
 
+
+
+
+        Try
+            validacionus()
+
+        Catch ex As Exception
+            MessageBox.Show("error")
+        End Try
         'If txtContraseña.Text = contra And txtUsuario.Text = Usuario Then
         '    MsgBox("Ingreso al sistema Exitosamente!", vbInformation + vbOK, "Informacion")
         '    Me.Hide()
@@ -75,5 +91,49 @@ Public Class Login
         Else
             Me.ErrorValidacion.SetError(sender, "Es un campo obligatorio")
         End If
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+    Private Sub validacionus()
+        Try
+            Dim username As String
+            Dim llave As String
+            Dim rol, compare As String
+            Dim vars As Integer
+            username = txtUsuario.Text
+            llave = txtContraseña.Text
+
+
+            If conexion.VerificarUsuario(username, llave) Then
+                MessageBox.Show("Bienvenido a Compucenter.;)", "Sesion correcta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                username = txtUsuario.Text
+                TextBox1.Text = conexion.retornarrol(username)
+                rol = TextBox1.Text.ToString
+
+                'MsgBox(rol)
+                compare = "Empleado"
+                vars = String.Compare(rol, compare)
+                'MsgBox(vars)
+
+                If (vars) = 1 Then
+                    Me.Hide()
+                    MainPageUsuario.Show()
+
+                Else
+
+
+                    MainPage.Show()
+
+                    Me.Hide()
+                End If
+
+            Else
+                MessageBox.Show("No se pudo iniciar la sesion", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
     End Sub
 End Class

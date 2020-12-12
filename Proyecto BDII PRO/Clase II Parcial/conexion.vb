@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 
 Public Class conexion
 
-    Public conexion As SqlConnection = New SqlConnection("Data Source=DESKTOP-O55QRS2;Initial Catalog=CompuCenter;Integrated Security=True")
+    Public conexion As SqlConnection = New SqlConnection("Data Source=DESKTOP-LGDBE5Q\SQLEXPRESS;Initial Catalog=CompuCenter;Integrated Security=True")
     Public ds As DataSet = New DataSet()
     Public da As SqlDataAdapter
     Public lectura As SqlDataReader
@@ -1001,6 +1001,61 @@ Public Class conexion
             conexion.Close()
         End Try
     End Function
+
+
+
+    ''''''''''''''''''''''procedimientos de usuario
+    Public Function VerificarUsuario(username As String, llave As String) As Boolean
+        Try
+            conexion.Open()
+            cmd = New SqlCommand("dbo.validarusuario", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@username", username)
+            cmd.Parameters.AddWithValue("@llave", llave)
+
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            conexion.Close()
+        End Try
+    End Function
+
+
+    Function retornarrol(username As String)
+        Dim valorARetornar As String
+        Dim cmd As SqlCommand = conexion.CreateCommand()
+
+
+        Try
+
+            conexion.Open()
+            cmd = New SqlCommand("dbo.extraerrol", conexion)
+            cmd.CommandType = CommandType.StoredProcedure
+
+            cmd.Parameters.AddWithValue("@nombreusuario", username)
+
+            Dim value As Object = cmd.ExecuteScalar()
+
+            valorARetornar = value.ToString
+            conexion.Close()
+      
+            Return valorARetornar
+
+        Catch ex As Exception
+
+        End Try
+
+
+
+    End Function
+
 End Class
 
 

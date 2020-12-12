@@ -108,7 +108,7 @@ Partial Class Ventas
         'txtfecha
         '
         Me.txtfecha.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtfecha.Location = New System.Drawing.Point(110, 135)
+        Me.txtfecha.Location = New System.Drawing.Point(110, 131)
         Me.txtfecha.Mask = "00/00/0000"
         Me.txtfecha.Name = "txtfecha"
         Me.txtfecha.Size = New System.Drawing.Size(100, 26)
